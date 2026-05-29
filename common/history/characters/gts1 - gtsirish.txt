@@ -1,0 +1,21 @@
+CHARACTERS = {
+	c:GTS1 ?= {
+		create_character = {
+			# Hanfere ibn Aydahis
+			first_name = "Lottie"
+			last_name = "Sinsal"
+			historical = yes
+			culture = cu:gts_cult1
+			religion = rel:gts_religion1
+			female = yes
+			ruler = yes
+			#is_general = yes
+			age = 24 # complete guesswork
+			interest_group = ig_gts
+			ideology = ideology_moderate
+			traits = {
+				direct
+			}
+		}
+	}
+}

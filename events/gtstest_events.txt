@@ -1,0 +1,19 @@
+﻿namespace = gtstest
+
+
+gtstest.1 = {
+    type = country_event
+    title = gtstest.1.t
+    desc = gtstest.1.d
+    flavor = gtstest.1.f
+
+    event_image = {
+        video = "gtsr_event_12"
+    }
+
+
+    option = {
+        name = gtstest.1.a
+        
+    }
+}

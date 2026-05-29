@@ -1,0 +1,125 @@
+namespace = gtsr
+namespace = gtsr_main
+
+gtsr.1 = {
+    type = country_event
+    hidden = yes
+    trigger = {
+    }
+
+    immediate = {
+        gtsr_culture_convert_pulse_effect = yes
+        gtsr_pop_startup_effect = yes
+        add_primary_culture = cu:gts_cult1
+        if = {
+            limit = {
+                #has_law_or_variant = law_type:law_wsg_ruler
+            }
+            every_scope_pop = {
+                limit = {
+                    culture = cu:gts_cult1
+                }
+                change_pop_religion = {
+                    target = owner.religion
+                    value = 1
+                }
+            }
+            trigger_event = { id = gtsr.2 }
+        }
+    }
+}
+gtsr.2 ={
+    type = country_event
+    hidden = yes
+    immediate = {
+        every_scope_pop = {
+            limit = {
+                culture = cu:gts_cult1
+                pop_is_gts_job_trigger = no
+            }
+            change_poptype = pop_type:gts_servent
+        }
+    }
+}
+
+gtsr_main.1 = {
+    type = country_event
+    title = gtsr_main.1.t
+    desc = gtsr_main.1.d
+    flavor = gtsr_main.1.f
+
+    event_image = {
+        video = "gtsr_event_15"
+    }
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+    duration = 3
+    cooldown = { days = long_modifier_time }
+    option = {
+        default_option = yes
+        name = gtsr_main.1.a
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            add_devastation = 5
+        }
+        custom_tooltip = { text = gtsr_main.1.tooltips }
+        hidden_effect = {
+            random_scope_state = {
+                limit = {
+                    is_capital = yes
+                }
+                every_scope_pop = {
+                    limit = {
+                        NOT = {
+                            culture = cu:gts_cult1
+                        }
+                    }
+                    change_pop_culture = {
+                        target = cu:gts_cult1
+                        value = 0.05
+                    }
+                }
+            }
+            trigger_event = {
+                id = gtsr_main.2
+                days = 30
+                popup = yes
+            }
+        }
+
+    }
+}
+gtsr_main.2 = {
+    type = country_event
+    title = gtsr_main.2.t
+    desc = gtsr_main.2.d
+    flavor = gtsr_main.2.f
+
+    event_image = {
+        texture = "gfx/event_pictures/gtsr_pic_1.dds"
+    }
+    on_opened_soundeffect ="event:/SFX/Events/unspecific/destruction"
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+    duration = 3
+    cooldown = { days = long_modifier_time }
+
+    option = {
+        default_option = yes
+        name = gtsr_main.2.a
+        add_technology_researched = gts_growth_tech1
+        add_primary_culture = cu:gts_cult1
+        every_scope_state = {
+            limit = {
+                is_incorporated = yes
+            }
+
+            state_region = {
+                add_homeland = cu:gts_cult1
+            }
+        }
+
+    }
+}

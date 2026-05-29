@@ -1,0 +1,93 @@
+﻿l_simp_chinese:
+ #生产组
+ pmg_base_building_gts_residential_area:"居住区政策"
+ pmg_base_gts_cloth_method:"基础生产方式"
+ pmg_secondary_gts_cloth_method:"额外产业"
+ pmg_gts_cloth_automatic:"辅助生产方式"
+ pmg_gts_sift:"巨大化过程"
+
+#生产方式
+ pm_manor_house_gts_ownership:"巨娘监管"
+
+ pm_gts_buildings:"巨娘建筑工"
+
+ pm_gts_enriching_farming:"巨娘汗液灌溉"
+ pm_gts_orchards:"提炼巨娘爱液结晶"
+ pm_gts_threshers:"巨娘参与收割"
+ pm_gts_residential1:"巨娘与人类混合居住"
+
+ pm_base_gts_cloth_method1:"巨娘手工制作"
+ pm_base_gts_cloth_method2:"巨娘用织布机"
+ pm_base_gts_cloth_method3:"巨娘用电动织布机"
+ pm_secondary_gts_cloth_method1:"无专注"
+ pm_secondary_gts_cloth_method2:"专注衣物"
+ pm_secondary_gts_cloth_method3:"专注袜子"
+ pm_secondary_gts_cloth_method4:"专注鞋子"
+ pm_gts_cloth_automatic1:"巨娘主导"
+ pm_gts_cloth_automatic2:"随衣物附赠小人"
+ pm_gts_cloth_automatic3:"回收旧衣物"
+
+ pm_gts_philosophy_department:"巨娘学院"
+ pm_gts_academia:"巨娘教师"
+
+ pm_gts_sift1:"无巨大化"
+ pm_gts_summon:"巨娘降临仪式"
+ pm_gts_lily:"磨豆腐"
+ pm_growth_drug:"巨大化药物"
+
+ pm_dynamite_gts_building_coal_mine:"巨娘开采"
+ pm_dynamite_gts_building_iron_mine:"巨娘开采"
+ pm_dynamite_gts_building_lead_mine:"巨娘开采"
+ pm_dynamite_gts_building_sulfur_mine:"巨娘开采"
+ pm_dynamite_gts_building_gold_mine:"巨娘开采"
+
+
+
+ building_employment_gts_cache_add:"适格者/级"
+ building_employment_gts_maid_add:"巨娘侍女/级"
+ building_employment_gts_maid_add_desc:"修正建筑每级可以雇佣的巨娘侍女"
+ building_employment_gts_servent_add:"巨娘平民/级"
+ building_employment_gts_servent_add_desc:"修正建筑每级可以雇佣的巨娘平民"
+ building_employment_gts_leader_add:"巨娘贵族/级"
+ building_employment_gts_leader_add_desc:"修正建筑每级可以雇佣的巨娘贵族"
+
+ goods_output_gts_liquid_add:"每级@gts_liquid!巨娘体液产出"
+ goods_input_gts_liquid_add:"每级@gts_liquid!巨娘体液投入"
+ goods_output_gts_socks_add:"每级@gts_socks!巨娘袜子产出"
+ goods_input_gts_socks_add:"每级@gts_socks!巨娘袜子投入"
+ goods_output_gts_shoes_add:"每级@gts_shoes!巨娘鞋子液产出"
+ goods_input_gts_shoes_add:"每级@gts_shoes!巨娘鞋子投入"
+ goods_output_gts_cloth_add:"每级@gts_cloth!巨娘衣物产出"
+ goods_input_gts_cloth_add:"每级@gts_cloth!巨娘衣物投入"
+ goods_output_gts_liquid_mult:"每级@gts_liquid!巨娘体液产出"
+ goods_input_gts_liquid_mult:"每级@gts_liquid!巨娘体液投入"
+ goods_output_gts_socks_mult:"每级@gts_socks!巨娘袜子产出"
+ goods_input_gts_socks_mult:"每级@gts_socks!巨娘袜子投入"
+ goods_output_gts_shoes_mult:"每级@gts_shoes!巨娘鞋子液产出"
+ goods_input_gts_shoes_mult:"每级@gts_shoes!巨娘鞋子投入"
+ goods_output_gts_cloth_mult:"每级@gts_cloth!巨娘衣物产出"
+ goods_input_gts_cloth_mult:"每级@gts_cloth!巨娘衣物投入"
+
+ building_gts_servent_mortality_mult:"$gts_servent$[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')]"
+ building_gts_servent_mortality_mult_desc:"对$gts_servent$[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')]的增益或惩罚"
+ building_gts_maid_mortality_mult:"$gts_maid$[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')]"
+ building_gts_maid_mortality_mult_desc:"对$gts_maid$[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')]的增益或惩罚"
+ building_gts_leader_mortality_mult:"$gts_leader$[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')]"
+ building_gts_leader_mortality_mult_desc:"对$gts_leader$[Concept('concept_pop_growth', '$concept_pop_growth_mortality$')]的增益或惩罚"
+ building_gts_servent_standard_of_living_add: "$gts_servent$的[concept_sol]"
+ building_gts_servent_standard_of_living_add_desc: "对已雇用的$gts_servent$的[concept_sol]给予增益或惩罚。"
+ building_gts_maid_standard_of_living_add: "$gts_maid$的[concept_sol]"
+ building_gts_maid_standard_of_living_add_desc: "对已雇用的$gts_maid$的[concept_sol]给予增益或惩罚。"
+ building_gts_leader_standard_of_living_add: "$gts_leader$的[concept_sol]"
+ building_gts_leaders_standard_of_living_add_desc: "对已雇用的$gts_leader$的[concept_sol]给予增益或惩罚。"
+
+ state_gts_servent_standard_of_living_add: "$gts_servent$的[concept_sol]"
+ state_gts_servent_standard_of_living_add_desc: "对省份的$gts_servent$的[concept_sol]给予增益或惩罚。"
+ state_gts_maid_standard_of_living_add: "$gts_maid$的[concept_sol]"
+ state_gts_maid_standard_of_living_add_desc: "对省份用的$gts_maid$的[concept_sol]给予增益或惩罚。"
+ state_gts_leader_standard_of_living_add: "$gts_leader$的[concept_sol]"
+ state_gts_leader_standard_of_living_add_desc: "对省份用的$gts_leader$的[concept_sol]给予增益或惩罚。"
+#建筑
+ building_gts_residential_area:"巨娘居住区"
+ building_gts_cloth_factory:"巨娘衣物工厂"
+ building_gts_transformation:"巨大化设施"

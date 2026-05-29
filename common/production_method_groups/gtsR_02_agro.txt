@@ -1,0 +1,85 @@
+#黑麦农场
+INJECT:pmg_base_building_rye_farm = { #黑麦农场
+    production_methods = {
+        pm_gts_enriching_farming
+    }
+}
+INJECT:pmg_secondary_building_rye_farm = {
+    production_methods = {
+        pm_gts_orchards
+    }
+}
+
+INJECT:pmg_harvesting_process_building_rye_farm = {
+    production_methods = {
+        pm_gts_threshers
+    }
+}
+
+#水稻农场
+INJECT:pmg_base_building_wheat_farm = {
+    production_methods = {
+        pm_gts_enriching_farming
+    }
+}
+INJECT:pmg_secondary_building_wheat_farm = {
+    production_methods = {
+        pm_gts_orchards
+    }
+}
+INJECT:pmg_harvesting_process_building_wheat_farm = {
+    production_methods = {
+        pm_gts_threshers
+    }
+}
+
+#玉米农场
+INJECT:pmg_base_building_maize_farm = {
+    production_methods = {
+        pm_gts_enriching_farming
+    }
+}
+INJECT:pmg_secondary_building_maize_farm = {
+    production_methods = {
+        pm_gts_orchards
+    }
+}
+INJECT:pmg_harvesting_process_building_maize_farm = {
+    production_methods = {
+        pm_gts_threshers
+    }
+}
+
+#杂谷农场
+INJECT:pmg_base_building_millet_farm = {
+    production_methods = {
+        pm_gts_enriching_farming
+    }
+}
+INJECT:pmg_secondary_building_millet_farm = {
+    production_methods = {
+        pm_gts_orchards
+    }
+}
+INJECT:pmg_harvesting_process_building_millet_farm = {
+    production_methods = {
+        pm_gts_threshers
+    }
+}
+
+INJECT:pmg_base_building_rice_farm = {
+    production_methods = {
+        pm_gts_enriching_farming
+    }
+}
+INJECT:pmg_secondary_building_rice_farm = {
+    production_methods = {
+        pm_gts_orchards
+    }
+}
+INJECT:pmg_harvesting_process_building_rice_farm = {
+    production_methods = {
+        pm_gts_threshers
+    }
+}
+

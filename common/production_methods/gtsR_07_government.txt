@@ -1,0 +1,48 @@
+pm_gts_philosophy_department = {
+    texture = "gfx/interface/icons/production_method_icons/gts_maid.dds"
+
+    unlocking_technologies = {
+        gts_growth_tech1
+    }
+
+    country_modifiers = {
+        workforce_scaled = {
+            country_weekly_innovation_add = 10
+        }
+    }
+
+    building_modifiers = {
+        workforce_scaled = {
+            goods_input_paper_add = 5
+            goods_input_gts_socks_add = 5
+            goods_input_gts_shoes_add = 5
+            goods_input_gts_cloth_add = 5
+        }
+
+        level_scaled = {
+            building_employment_gts_servent_add = 200
+            building_employment_gts_maid_add = 200
+            building_employment_academics_add = 100
+        }
+    }
+
+    state_modifiers = {
+        workforce_scaled = {
+            state_pop_qualifications_mult = 0.4
+        }
+    }
+}
+
+pm_gts_academia = {
+    texture = "gfx/interface/icons/production_method_icons/ownership_academics.dds"
+
+    unlocking_technologies = {
+        gts_growth_tech1
+    }
+
+    building_modifiers = {
+        level_scaled = {
+            building_employment_gts_leader_add = 50
+        }
+    }
+}

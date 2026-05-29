@@ -1,0 +1,161 @@
+battle_condition_gts_pursuit = {
+    icon = "gfx/interface/icons/battle_conditions/battle_condition_gts_pursuit.dds"
+
+    modifier = {
+        unit_morale_loss_mult = -0.5
+        unit_offense_mult = 1.5
+        unit_provinces_captured_mult = 0.2
+        battle_combat_width_mult = 3
+    }
+
+    possible = {
+        exists = scope:character
+        scope:character = {
+            has_role = general
+            OR = {
+                culture = cu:gts_cult1
+                commander_military_formation ?= {
+                    formation_army_unit_type_fraction = {
+                        target = unit_type:combat_unit_type_gts_100m
+                        value >= 0.1
+                    }
+                }
+                commander_military_formation ?= {
+                    formation_army_unit_type_fraction = {
+                        target = unit_type:combat_unit_type_gts_1000m
+                        value >= 0.1
+                    }
+                }
+            }
+        }
+
+    }
+
+    weight = {
+        value = 100
+
+    }
+}
+battle_condition_gts_sock_play = {
+    icon = "gfx/interface/icons/battle_conditions/battle_condition_gts_sock_play.dds"
+
+    modifier = {
+        unit_morale_damage_mult = 2
+        unit_provinces_captured_mult = -0.2
+        unit_devastation_mult = 0.2
+    }
+
+    possible = {
+        exists = scope:character
+        scope:character = {
+            has_role = general
+            OR = {
+                culture = cu:gts_cult1
+                commander_military_formation ?= {
+                    formation_army_unit_type_fraction = {
+                        target = unit_type:combat_unit_type_gts_100m
+                        value >= 0.1
+                    }
+                }
+                commander_military_formation ?= {
+                    formation_army_unit_type_fraction = {
+                        target = unit_type:combat_unit_type_gts_1000m
+                        value >= 0.1
+                    }
+                }
+            }
+        }
+        scope:military_formation = {
+            has_mobilization_option = mobilization_option:mobilization_option_gtsr_sockedfoot
+        }
+
+
+    }
+
+    weight = {
+        value = 100
+
+    }
+}
+
+battle_condition_gts_rush = {
+    icon = "gfx/interface/icons/battle_conditions/battle_condition_gts_rush.dds"
+
+    modifier = {
+        unit_provinces_captured_mult = 0.4
+    }
+
+    possible = {
+        exists = scope:character
+        scope:character = {
+            has_role = general
+            OR = {
+                culture = cu:gts_cult1
+                commander_military_formation ?= {
+                    formation_army_unit_type_fraction = {
+                        target = unit_type:combat_unit_type_gts_100m
+                        value >= 0.1
+                    }
+                }
+                commander_military_formation ?= {
+                    formation_army_unit_type_fraction = {
+                        target = unit_type:combat_unit_type_gts_1000m
+                        value >= 0.1
+                    }
+                }
+            }
+        }
+        scope:military_formation = {
+            has_mobilization_option = mobilization_option:mobilization_option_gtsr_barefoot
+        }
+
+
+    }
+
+    weight = {
+        value = 100
+
+    }
+}
+
+battle_condition_gts_smell = {
+    icon = "gfx/interface/icons/battle_conditions/battle_condition_gts_smell.dds"
+
+    modifier = {
+        unit_morale_loss_mult = 0.2
+        unit_morale_loss_mult = 1.5
+        unit_defense_mult = 1.5
+    }
+
+    possible = {
+        exists = scope:character
+        scope:character = {
+            has_role = general
+            OR = {
+                culture = cu:gts_cult1
+                commander_military_formation ?= {
+                    formation_army_unit_type_fraction = {
+                        target = unit_type:combat_unit_type_gts_100m
+                        value >= 0.1
+                    }
+                }
+                commander_military_formation ?= {
+                    formation_army_unit_type_fraction = {
+                        target = unit_type:combat_unit_type_gts_1000m
+                        value >= 0.1
+                    }
+                }
+            }
+        }
+        scope:military_formation = {
+            has_mobilization_option = mobilization_option:mobilization_option_gtsr_gas
+        }
+
+
+    }
+
+    weight = {
+        value = 100
+
+    }
+}

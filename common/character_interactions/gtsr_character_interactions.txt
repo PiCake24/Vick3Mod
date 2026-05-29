@@ -1,0 +1,53 @@
+stomp_to_death = {
+    clicksound = "event:/SFX/DLC/1.3_ip1/UI/exile_character"
+
+    potential = {
+        is_in_exile_pool = no
+        is_in_void = no
+        is_ruler_of_own_country = no
+        is_immortal = no
+    }
+
+    show_requirements = yes
+
+    possible = {
+        owner ?= {
+            has_technology_researched = gts_growth_tech1
+        }
+    }
+
+    effect = {
+        this.interest_group ?= {
+            save_scope_as = relevant_ig
+        }
+        this = {
+            save_scope_as = assassinated_scope
+        }
+        custom_tooltip = {
+            text = stomp_to_death_text
+            kill_character = yes
+        }
+        owner ?= {
+            this.ruler ?= {
+                if = {
+                    limit = {
+                        has_culture = cu:gts_cult1
+                    }
+                    add_modifier = {
+                        name = modifier_stomp_excution
+                        days = 180
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    cooldown = { days = 0 }
+    show_confirmation_box = yes
+
+    ai_chance = {
+        value = 0
+    }
+}

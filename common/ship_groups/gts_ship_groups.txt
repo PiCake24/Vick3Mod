@@ -1,0 +1,7 @@
+ship_group_gts_shipgirls = {
+    icon = "gfx/interface/icons/pops_icons/gts_leader.dds"
+    color = { 143 63 205 }
+
+    category = capital_group
+    ai_weight = 0
+}

@@ -1,0 +1,103 @@
+﻿gtsr_tiny_upper_class = {
+	social_hierarchy = default_social_hierarchy
+	strata = upper
+
+	allowed_professions = {
+		aristocrats
+		capitalists
+	}
+	pop_criteria = {
+		NOT = { has_pop_culture = gts_cult1 }
+	}
+}
+
+gtsr_tiny_middle_class = {
+	social_hierarchy = default_social_hierarchy
+	strata = middle
+
+	allowed_professions = {
+		gts_cache
+		academics
+		bureaucrats
+		clergymen
+		engineers
+		farmers
+		officers
+		shopkeepers
+		pbi_journalists
+
+	}
+	pop_criteria = {
+		NOT = { has_pop_culture = gts_cult1 }
+	}
+}
+
+gtsr_tiny_lower_class = {
+	social_hierarchy = default_social_hierarchy
+	strata = lower
+
+	allowed_professions = {
+		clerks
+		laborers
+		machinists
+		peasants
+		slaves
+		soldiers
+	}
+	pop_criteria = {
+		NOT = { has_pop_culture = gts_cult1 }
+	}
+}
+gtsr_upper_class = {
+	social_hierarchy = default_social_hierarchy
+	strata = upper
+
+	allowed_professions = {
+		gts_leader
+		aristocrats
+		capitalists
+	}
+	pop_criteria = {
+		has_pop_culture = gts_cult1
+	}
+}
+
+gtsr_middle_class = {
+	social_hierarchy = default_social_hierarchy
+	strata = middle
+
+	allowed_professions = {
+		gts_cache
+		gts_maid
+		academics
+		bureaucrats
+		clergymen
+		engineers
+		farmers
+		officers
+		shopkeepers
+		pbi_journalists
+
+	}
+	pop_criteria = {
+		has_pop_culture = gts_cult1
+	}
+}
+
+gtsr_lower_class = {
+	social_hierarchy = default_social_hierarchy
+	strata = lower
+
+	allowed_professions = {
+		gts_servent
+		clerks
+		laborers
+		machinists
+		peasants
+		slaves
+		soldiers
+	}
+	pop_criteria = {
+		has_pop_culture = gts_cult1
+	}
+}

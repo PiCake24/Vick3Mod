@@ -1,0 +1,7 @@
+﻿l_simp_chinese:
+ #buff
+ modifier_stomp_excution:"踩扁了公众人物"
+ #交互
+ stomp_to_death:"一脚踩死"
+ stomp_to_death_desc:"“不是我喜欢的虫子，直接踩死”"
+ stomp_to_death_text:"[SCOPE.sCharacter('assassinated_scope').GetFullName]被#b 巨娘踩扁#!"

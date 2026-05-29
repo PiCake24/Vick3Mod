@@ -1,0 +1,35 @@
+moe_clothes_gts_cult1_trigger = {
+    exists = scope:character
+    scope:character = {
+        culture = cu:gts_cult1
+    }
+}
+
+moe_clothes_pop_gts_cult1_trigger = {
+    exists = scope:pop
+    scope:pop = {
+        culture = cu:gts_cult1
+    }
+}
+
+pop_is_gts_job_trigger = {
+    OR = {
+        is_pop_type = gts_servent
+        is_pop_type = gts_maid
+        is_pop_type = gts_leader
+        #is_pop_type = gts_cache
+    }
+}
+
+pop_is_gts_trigger = {
+    OR = {
+        culture = cu:gts_cult1
+        #pop_is_gts_job_trigger = yes
+    }
+}
+
+is_gtsr_religion = {
+    OR = {
+        rel:gts_religion1 ?= this
+    }
+}

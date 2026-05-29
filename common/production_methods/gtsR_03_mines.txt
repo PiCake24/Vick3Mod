@@ -1,0 +1,155 @@
+pm_dynamite_gts_building_coal_mine = {
+    texture = "gfx/interface/icons/production_method_icons/gts_residential1.dds"
+
+    unlocking_technologies = {
+        gts_growth_tech2
+    }
+
+    state_modifiers = {
+        workforce_scaled = {
+            state_pollution_generation_add = 5
+        }
+    }
+
+    building_modifiers = {
+        workforce_scaled = {
+            goods_input_gts_socks_add = 5
+            goods_input_gts_shoes_add = 5
+            goods_input_gts_cloth_add = 5
+
+            # output goods
+            goods_output_coal_add = 50
+        }
+
+        level_scaled = {
+            building_employment_engineers_add = 50
+            building_employment_gts_servent_add = 200
+            building_employment_gts_maid_add = 100
+        }
+    }
+}
+
+pm_dynamite_gts_building_iron_mine = {
+    texture = "gfx/interface/icons/production_method_icons/gts_residential1.dds"
+
+    unlocking_technologies = {
+        gts_growth_tech2
+    }
+
+    state_modifiers = {
+        workforce_scaled = {
+            state_pollution_generation_add = 5
+        }
+    }
+
+    building_modifiers = {
+        workforce_scaled = {
+            goods_input_gts_socks_add = 5
+            goods_input_gts_shoes_add = 5
+            goods_input_gts_cloth_add = 5
+
+            # output goods
+            goods_output_iron_add = 50
+        }
+
+        level_scaled = {
+            building_employment_engineers_add = 50
+            building_employment_gts_servent_add = 200
+            building_employment_gts_maid_add = 100
+        }
+    }
+}
+
+pm_dynamite_gts_building_lead_mine = {
+    texture = "gfx/interface/icons/production_method_icons/gts_residential1.dds"
+
+    unlocking_technologies = {
+        gts_growth_tech2
+    }
+
+    state_modifiers = {
+        workforce_scaled = {
+            state_pollution_generation_add = 5
+        }
+    }
+
+    building_modifiers = {
+        workforce_scaled = {
+            goods_input_gts_socks_add = 5
+            goods_input_gts_shoes_add = 5
+            goods_input_gts_cloth_add = 5
+
+            # output goods
+            goods_output_lead_add = 50
+        }
+
+        level_scaled = {
+            building_employment_engineers_add = 50
+            building_employment_gts_servent_add = 200
+            building_employment_gts_maid_add = 100
+        }
+    }
+}
+
+pm_dynamite_gts_building_sulfur_mine = {
+    texture = "gfx/interface/icons/production_method_icons/gts_residential1.dds"
+
+    unlocking_technologies = {
+        gts_growth_tech2
+    }
+
+    state_modifiers = {
+        workforce_scaled = {
+            state_pollution_generation_add = 5
+        }
+    }
+
+    building_modifiers = {
+        workforce_scaled = {
+            goods_input_gts_socks_add = 5
+            goods_input_gts_shoes_add = 5
+            goods_input_gts_cloth_add = 5
+
+            # output goods
+            goods_output_sulfur_add = 50
+        }
+
+        level_scaled = {
+            building_employment_engineers_add = 50
+            building_employment_gts_servent_add = 200
+            building_employment_gts_maid_add = 100
+        }
+    }
+}
+
+pm_dynamite_gts_building_gold_mine = {
+    texture = "gfx/interface/icons/production_method_icons/gts_residential1.dds"
+
+    unlocking_technologies = {
+        gts_growth_tech2
+    }
+
+    state_modifiers = {
+        workforce_scaled = {
+            state_pollution_generation_add = 5
+        }
+    }
+
+    building_modifiers = {
+        workforce_scaled = {
+            goods_input_gts_socks_add = 5
+            goods_input_gts_shoes_add = 5
+            goods_input_gts_cloth_add = 5
+
+            # output goods
+            goods_output_gold_add = 30
+        }
+
+        level_scaled = {
+            building_employment_engineers_add = 50
+            building_employment_gts_servent_add = 200
+            building_employment_gts_maid_add = 100
+        }
+    }
+}
+

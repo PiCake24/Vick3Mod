@@ -1,0 +1,29 @@
+INJECT:pmg_explosives_building_coal_mine = {
+    production_methods = {
+        pm_dynamite_gts_building_coal_mine
+    }
+}
+
+INJECT:pmg_explosives_building_iron_mine = {
+    production_methods = {
+        pm_dynamite_gts_building_iron_mine
+    }
+}
+
+INJECT:pmg_explosives_building_lead_mine = {
+    production_methods = {
+        pm_dynamite_gts_building_lead_mine
+    }
+}
+
+INJECT:pmg_explosives_building_sulfur_mine = {
+    production_methods = {
+        pm_dynamite_gts_building_sulfur_mine
+    }
+}
+
+INJECT:pmg_explosives_building_gold_mine = {
+    production_methods = {
+        pm_dynamite_gts_building_gold_mine
+    }
+}

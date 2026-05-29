@@ -1,0 +1,106 @@
+ship_type_gts_warshipgirls = {
+
+    ship_group = ship_group_gts_shipgirls
+
+    modification_construction_cost = 150
+
+    can_be_flagship = yes
+
+    modifier = {
+        ship_construction_progress_max_add = 50
+        ship_hit_points_max_add = 4500
+        ship_crew_max_add = 1500
+        ship_movement_speed_add = 6
+        ship_supply_capacity_add = 80
+        ship_carrying_capacity_add = 10
+        ship_marine_capacity_add = 3
+        ship_hull_damage_add = 90
+        ship_crew_damage_add = 60
+        ship_armor_add = 220
+        ship_critical_hit_chance_add = 0.1
+        ship_critical_hit_multiplier_add = 3
+        ship_vulnerability_add = 120
+        ship_screening_add = 40
+        ship_readiness_gain_add = 10
+        ship_accuracy_add = 10
+        ship_visibility_add = 180
+        ship_detection_add = 90
+        ship_blockade_strength_add = 500
+
+        ship_battle_against_ship_type_torpedo_boat_accuracy_mult = -0.4
+        ship_battle_against_ship_type_torpedo_boat_destroyer_accuracy_mult = -0.4
+        ship_battle_against_ship_type_submarine_accuracy_mult = -0.4
+        ship_battle_against_ship_type_destroyer_accuracy_mult = -0.3
+    }
+
+    construction_goods = {
+        goods_input_steel_add = 500
+        goods_input_iron_add = 500
+        goods_input_groceries_add = 500
+        goods_input_gts_shoes_add = 400
+        goods_input_gts_socks_add = 400
+        goods_input_gts_cloth_add = 400
+    }
+
+    materiel_goods = {
+        goods_input_groceries_add = 1
+        goods_input_ammunition_add = 0.1
+        goods_input_gts_shoes_add = 1
+        goods_input_gts_socks_add = 1
+        goods_input_gts_cloth_add = 1
+    }
+
+    unlocking_technologies = { gts_growth_tech2 }
+
+    icon = "gfx/interface/icons/ships/ship_category/ship_group_gts_shipgirls.dds"
+    profile_texture = "gfx/interface/icons/ships/ship_types/silhouette_gts_warshipgirls.dds"
+
+    ai_weight = 0
+
+    modifications = {
+        ship_mod_slot_gts_cloth = {
+            ship_mod_gts_warshipgirls_armor_light
+            ship_mod_gts_warshipgirls_armor_medium
+            ship_mod_gts_warshipgirls_armor_high
+        }
+        ship_mod_slot_gts_guns = {
+            ship_mod_gts_warshipgirls_guns_light
+            ship_mod_gts_warshipgirls_guns_medium
+            ship_mod_gts_warshipgirls_guns_high
+        }
+        ship_mod_slot_gts_shoes = {
+            ship_mod_gts_warshipgirls_propulsion_light
+            ship_mod_gts_warshipgirls_propulsion_medium
+            ship_mod_gts_warshipgirls_propulsion_high
+        }
+        ship_mod_slot_gts_range = {
+            ship_mod_gts_warshipgirls_range_light
+            ship_mod_gts_warshipgirls_range_medium
+            ship_mod_gts_warshipgirls_range_high
+        }
+        ship_mod_slot_utility_1 = {
+            utility_mod_patrol_boats
+            utility_mod_landing_skiffs
+            utility_mod_fire_suppression
+            utility_mod_extended_sick_bay
+            utility_mod_torpedo_nets
+            utility_mod_camouflage
+        }
+        ship_mod_slot_utility_2 = {
+            utility_mod_patrol_boats
+            utility_mod_landing_skiffs
+            utility_mod_fire_suppression
+            utility_mod_extended_sick_bay
+            utility_mod_torpedo_nets
+            utility_mod_camouflage
+        }
+        ship_mod_slot_utility_3 = {
+            utility_mod_patrol_boats
+            utility_mod_landing_skiffs
+            utility_mod_fire_suppression
+            utility_mod_extended_sick_bay
+            utility_mod_torpedo_nets
+            utility_mod_camouflage
+        }
+    }
+}

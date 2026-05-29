@@ -1,0 +1,57 @@
+GTSR_Pamela = { #舰娘运输公司-企业
+    female = yes #女性
+    first_name = "Pamela"
+    last_name = "Bischa"
+    historical = yes
+    noble = yes      #贵族
+    culture = cu:gts_cult1 #种族
+    birth_date = 1816.10.3
+    interest_group = ig_gts
+    ideology = ideology_gtsisum_cruel #市场自由主义
+    traits = { #
+        charismatic #魅力四射
+        direct #直率
+        expert_entrepreneur #熟练实业家
+        expensive_tastes #昂贵嗜好
+    }
+    executive_usage = {
+        company_trigger = {
+            is_company_type = company_type:company_gts
+        }
+        earliest_usage_date = 1836.1.1
+        latest_usage_date = 1936.1.1
+        chance = 100
+    }
+    on_created = {
+        set_character_immortal = yes
+    }
+}
+
+GTSR_Pamela = { #舰娘运输公司-企业
+    female = yes #女性
+    first_name = "Pascal"
+    last_name = "Bischa"
+    historical = yes
+    noble = yes      #贵族
+    culture = cu:gts_cult1 #种族
+    birth_date = 1816.10.3
+    interest_group = ig_gts
+    ideology = ideology_gtsisum_cruel #市场自由主义
+    traits = { #
+        charismatic #魅力四射
+        direct #直率
+        expert_entrepreneur #熟练实业家
+        expensive_tastes #昂贵嗜好
+    }
+    executive_usage = {
+        company_trigger = {
+            is_company_type = company_type:company_gts_growth
+        }
+        earliest_usage_date = 1836.1.1
+        latest_usage_date = 1936.1.1
+        chance = 100
+    }
+    on_created = {
+        set_character_immortal = yes
+    }
+}

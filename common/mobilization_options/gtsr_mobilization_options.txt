@@ -1,0 +1,242 @@
+mobilization_option_gtsr_gas = {
+    texture = "gfx/interface/icons/mobilization_options/chemical_weapons.dds"
+
+    possible = {
+        market ?= {
+            mg:gts_liquid ?= {
+                has_potential_supply = yes
+            }
+        }
+        scope:military_formation = {
+            OR = {
+                formation_army_unit_type_fraction = {
+                    target = unit_type:combat_unit_type_gts_100m
+                    value >= 0.1
+                }
+                formation_army_unit_type_fraction = {
+                    target = unit_type:combat_unit_type_gts_1000m
+                    value >= 0.1
+                }
+            }
+
+        }
+    }
+
+    on_activate_while_mobilized = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.1
+            }
+        }
+    }
+
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.1
+            }
+        }
+    }
+
+    unlocking_technologies = {
+        gts_growth_tech1
+    }
+    upkeep_modifier = {
+        goods_input_gts_liquid_add = 2
+    }
+    unit_modifier = {
+        unit_offense_add = 100
+        unit_defense_add = 50
+        unit_morale_damage_mult = 2
+        unit_kill_rate_add = 2
+        unit_devastation_mult = 2
+        unit_recovery_rate_add = -0.3
+    }
+    ai_weight = {
+        value = 0
+    }
+
+    group = gtsr_support_unit
+}
+
+mobilization_option_gtsr_barefoot = {
+    texture = "gfx/interface/icons/mobilization_options/gtsr_barefoot.dds"
+
+    possible = {
+        scope:military_formation = {
+            OR = {
+                formation_army_unit_type_fraction = {
+                    target = unit_type:combat_unit_type_gts_100m
+                    value >= 0.1
+                }
+                formation_army_unit_type_fraction = {
+                    target = unit_type:combat_unit_type_gts_1000m
+                    value >= 0.1
+                }
+            }
+            NOR = {
+                has_mobilization_option = mobilization_option:mobilization_option_gtsr_sockedfoot
+                has_mobilization_option = mobilization_option:mobilization_option_gtsr_shoes
+            }
+        }
+    }
+
+    on_activate_while_mobilized = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.1
+            }
+        }
+    }
+
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.1
+            }
+        }
+    }
+
+    unlocking_technologies = {
+        gts_growth_tech1
+    }
+    upkeep_modifier = {
+        goods_input_gts_shoes_mult = -0.8
+        goods_input_gts_socks_mult = -0.8
+    }
+    unit_modifier = {
+        unit_occupation_mult = 0.5
+    }
+    ai_weight = {
+        value = 0
+    }
+
+    group = gtsr_footwear
+}
+mobilization_option_gtsr_sockedfoot = {
+    texture = "gfx/interface/icons/mobilization_options/gtsr_sockedfoot.dds"
+
+    possible = {
+        scope:military_formation = {
+            OR = {
+                formation_army_unit_type_fraction = {
+                    target = unit_type:combat_unit_type_gts_100m
+                    value >= 0.1
+                }
+                formation_army_unit_type_fraction = {
+                    target = unit_type:combat_unit_type_gts_1000m
+                    value >= 0.1
+                }
+            }
+            NOR = {
+                has_mobilization_option = mobilization_option:mobilization_option_gtsr_barefoot
+                has_mobilization_option = mobilization_option:mobilization_option_gtsr_shoes
+            }
+        }
+    }
+
+    on_activate_while_mobilized = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.1
+            }
+        }
+    }
+
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.1
+            }
+        }
+    }
+
+    unlocking_technologies = {
+        gts_growth_tech1
+    }
+    upkeep_modifier = {
+        goods_input_gts_shoes_mult = -0.8
+    }
+    unit_modifier = {
+        unit_morale_damage_mult = 0.4
+        unit_devastation_mult = 0.3
+    }
+    ai_weight = {
+        value = 0
+    }
+
+    group = gtsr_footwear
+}
+mobilization_option_gtsr_shoes = {
+    texture = "gfx/interface/icons/mobilization_options/gtsr_shoes.dds"
+
+    possible = {
+        scope:military_formation = {
+            OR = {
+                formation_army_unit_type_fraction = {
+                    target = unit_type:combat_unit_type_gts_100m
+                    value >= 0.1
+                }
+                formation_army_unit_type_fraction = {
+                    target = unit_type:combat_unit_type_gts_1000m
+                    value >= 0.1
+                }
+            }
+            NOR = {
+                has_mobilization_option = mobilization_option:mobilization_option_gtsr_sockedfoot
+                has_mobilization_option = mobilization_option:mobilization_option_gtsr_barefoot
+            }
+        }
+    }
+
+    on_activate_while_mobilized = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.1
+            }
+        }
+    }
+
+    on_deactivate = {
+        custom_tooltip = {
+            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+            add_organization = {
+                value = organization
+                multiply = -0.1
+            }
+        }
+    }
+
+    unlocking_technologies = {
+        gts_growth_tech1
+    }
+    upkeep_modifier = {
+
+    }
+
+    unit_modifier = {
+        unit_kill_rate_add = 0.2
+        unit_offense_add = 10
+        unit_defense_add = 10
+        unit_devastation_mult = 0.2
+    }
+    ai_weight = {
+        value = 0
+    }
+
+    group = gtsr_footwear
+}

@@ -1,0 +1,4 @@
+concept_gts = {
+    texture = "gfx/interface/icons/pops_icons/gts_cache.dds"
+    is_loading_tip = yes
+}

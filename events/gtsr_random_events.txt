@@ -1,0 +1,536 @@
+namespace = gtsr_industrial_events
+namespace = gtsr_social_events
+namespace = gtsr_diplomatic
+namespace = gtsr_tech_events
+gtsr_industrial_events.1 = {
+    type = country_event
+    placement = scope:triangle_gts_cloth_factory_accident_state
+    title = gtsr_industrial_events.1.t
+    desc = gtsr_industrial_events.1.d
+    flavor = gtsr_industrial_events.1.f
+
+    event_image = {
+        texture = "gfx/event_pictures/gtsr_pic_2.dds"
+    }
+    on_opened_soundeffect ="event:/SFX/Events/asia/factory_accident"
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_skull.dds"
+
+    duration = 3
+
+    cooldown = { days = 7200 }
+
+    trigger = {
+
+
+        any_scope_state = {
+            has_building = building_gts_cloth_factory
+            NOT = {
+                #is_production_method_active = {
+                    #building_type = building_gts_cloth_factory
+                    #production_method = pm_gts_cloth_automatic2
+                #}
+            }
+        }
+    }
+    immediate = {
+        set_variable = {
+            name = triangle_gts_cloth_factory_accident
+            value = yes
+            months = 120
+        }
+        random_scope_state = {
+            limit = {
+                has_building = building_gts_cloth_factory
+                NOT = {
+                    #is_production_method_active = {
+                        #building_type = building_gts_cloth_factory
+                        #production_method = pm_gts_cloth_automatic2
+                    #}
+                }
+            }
+            save_scope_as = triangle_gts_cloth_factory_accident_state
+        }
+    }
+    option = {
+        name = gtsr_industrial_events.1.1
+        scope:triangle_gts_cloth_factory_accident_state = {
+            add_radicals_in_state = {
+                pop_type = laborers
+                value = small_radicals
+            }
+            add_modifier = {
+                name = modifier_gtsr_industrial_events_1a
+                days = normal_modifier_time
+            }
+        }
+    }
+    option = {
+        name = gtsr_industrial_events.1.2
+        default_option = yes
+        custom_tooltip = gtsr_industrial_events.1.b.tt
+        scope:triangle_gts_cloth_factory_accident_state = {
+            add_devastation = 5
+            add_loyalists_in_state = {
+                pop_type = laborers
+                value = small_radicals
+            }
+            add_radicals_in_state = {
+                pop_type = gts_servent
+                value = small_radicals
+            }
+            add_radicals_in_state = {
+                pop_type = gts_maid
+                value = small_radicals
+            }
+        }
+
+    }
+}
+
+gtsr_social_events.1 = {
+    type = country_event
+    placement = scope:gts_violence_state
+    title = gtsr_social_events.1.t
+    desc = gtsr_social_events.1.d
+    flavor = gtsr_social_events.1.f
+
+    event_image = {
+        video = "gtsr_event_16"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+    duration = 3
+
+    cooldown = { days = 360000 }
+
+    trigger = {
+        NOT = { has_variable = gts_violence_cooldown }
+        OR = {
+            has_law_or_variant = law_type:law_gts_police
+        }
+        any_scope_state = {
+            #is_incorporated = yes
+            has_building = building_urban_center
+        }
+    }
+    immediate = {
+        set_variable = {
+            name = gts_violence_cooldown
+            years = 2
+        }
+        random_scope_state = {
+            limit = {
+                #is_incorporated = yes
+                has_building = building_urban_center
+            }
+            save_scope_as = gts_violence_state
+        }
+    }
+    option = { # defund the police
+        name = prostitution.4.a
+        active_law:lawgroup_policing ?= { # Public Schools
+            add_amendment = {
+                type = amendment_gts_police_gentle
+                sponsor = PREV.ig:ig_gts
+            }
+        }
+        every_interest_group = {
+            limit = {
+                law_stance = {
+                    law = law_type:law_gts_police
+                    value < neutral
+                }
+            }
+            add_modifier = {
+                name = defunded_gts_police
+                days = normal_modifier_time
+            }
+        }
+    }
+    option = { # this is fine
+        name = prostitution.4.b
+        default_option = yes
+        scope:gts_violence_state = {
+            add_radicals_in_state = {
+                value = medium_radicals
+                strata = lower
+            }
+        }
+        active_law:lawgroup_policing ?= { # Public Schools
+            add_amendment = {
+                type = amendment_gts_police_curl
+                sponsor = PREV.ig:ig_gts
+            }
+        }
+        every_interest_group = {
+            limit = {
+                law_stance = {
+                    law = law_type:law_militarized_police
+                    value > neutral
+                }
+            }
+            add_modifier = {
+                name = defunded_gts_police
+                days = normal_modifier_time
+            }
+        }
+    }
+}
+
+gtsr_social_events.2 = { #Newspaper writes article about minority culture
+    type = country_event
+    placement = scope:culture_state
+
+    title = gtsr_social_events.2.t
+    desc = gtsr_social_events.2.d
+    flavor = gtsr_social_events.2.f
+
+    event_image = {
+        video = "gtsr_event_12"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_newspaper.dds"
+
+    duration = 3
+
+    cooldown = { days = 7200 }
+
+    trigger = {
+        any_scope_state = {
+            #is_homeland_of_country_cultures = ROOT
+            any_scope_culture = {
+                NOT = { is_primary_culture_of = ROOT }
+                PREV = {
+                    state_average_culture_pop_acceptance = { culture = prev value < acceptance_status_5 }
+                }
+            }
+            has_culture = cu:gts_cult1
+        }
+    }
+
+    immediate = {
+        random_scope_state = {
+            limit = {
+                #is_homeland_of_country_cultures = ROOT
+                any_scope_culture = {
+                    NOT = { is_primary_culture_of = ROOT }
+                    PREV = {
+                        state_average_culture_pop_acceptance = { culture = prev value < acceptance_status_5 }
+                    }
+                }
+                has_culture = cu:gts_cult1
+            }
+            save_scope_as = culture_state
+            random_scope_culture = {
+                limit = {
+                    NOT = { is_primary_culture_of = ROOT }
+                    PREV = {
+                        state_average_culture_pop_acceptance = { culture = prev value < acceptance_status_5 }
+                    }
+                }
+                save_scope_as = state_minority_culture
+            }
+            random_scope_culture = {
+                limit = {
+                    this = cu:gts_cult1
+                }
+                save_scope_as = state_gts_culture
+            }
+        }
+    }
+
+    option = { # Supress Article
+        name = gtsr_social_events.2.a
+
+        scope:culture_state = {
+            set_variable = rising_cultural_tension
+            add_culture_standard_of_living_modifier = {
+                culture = scope:state_minority_culture
+                days = normal_modifier_time
+                multiplier = -1
+            }
+        }
+    }
+
+    option = { #Ignore it
+        name = gtsr_social_events.2.b
+        default_option = yes
+        add_modifier = {
+            name = gts_bad_behave_supressed
+            days = short_modifier_time
+        }
+    }
+}
+
+gtsr_diplomatic.1 = { # Soldiers Cross the Border
+    type = country_event
+    placement = scope:rival_state
+
+    title = gtsr_diplomatic.1.t
+    desc = gtsr_diplomatic.1.d
+    flavor = gtsr_diplomatic.1.f
+
+    event_image = {
+        video = "gtsr_event_17"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+    cooldown = { days = 7200 }
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+    duration = 3
+
+    trigger = {
+        has_technology_researched = gts_growth_tech1
+        is_at_war = no
+        #country_rank >= rank_value:major_power
+        any_country = {
+            #country_rank >= rank_value:major_power
+            has_diplomatic_pact = {
+                who = root
+                type = rivalry
+            }
+            relations:root <= relations_threshold:poor
+            any_neighbouring_state = {
+                owner = ROOT
+            }
+            NOT = { this = ROOT }
+        }
+    }
+
+    immediate = {
+        random_country = {
+            limit = {
+                #country_rank >= rank_value:major_power
+                has_diplomatic_pact = {
+                    who = ROOT
+                    type = rivalry
+                }
+                relations:ROOT <= relations_threshold:poor
+                any_neighbouring_state = {
+                    owner = ROOT
+                }
+                NOT = { this = ROOT }
+            }
+            save_scope_as = rival_scope
+        }
+        save_scope_as = first_rival_country
+        random_neighbouring_state = {
+            limit = {
+                owner = scope:rival_scope
+            }
+            save_scope_as = rival_state
+        }
+    }
+
+    option = { #
+        name = gtsr_diplomatic.1.a
+        custom_tooltip = diplomatic_friction.2.a.tt
+        #set_variable = first_rival_country_var
+        scope:rival_scope = {
+            #hidden_effect = {
+            #    trigger_event = { id = diplomatic_friction.3 days = 10 }
+            #}
+            show_as_tooltip = {
+                scope:rival_scope = {
+                    add_modifier = {
+                        name = gts_border_sovereignity_questioned
+                        days = normal_modifier_time
+                    }
+
+                }
+                ROOT = {
+                    create_incident = {
+                        country = scope:rival_scope
+                        value = 5
+                    }
+                }
+            }
+        }
+        scope:rival_state = {
+            add_devastation = 5
+        }
+    }
+
+    option = { #Opt out
+        name = gtsr_diplomatic.1.b
+        default_option = yes
+        ig:ig_gts ?= {
+            add_modifier = {
+                name = border_cowardice
+                days = normal_modifier_time
+            }
+        }
+        scope:rival_state = {
+            add_devastation = 5
+        }
+    }
+}
+
+gtsr_diplomatic.2 = {
+    type = country_event
+    placement = root
+
+    duration = 3
+
+    cooldown = { days = 7200 }
+
+    event_image = {
+        video = "gtsr_event_1"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+    title = gtsr_diplomatic.2.t
+    desc = gtsr_diplomatic.2.d
+    flavor = gtsr_diplomatic.2.f
+
+    trigger = {
+        is_at_war = yes
+
+        any_scope_war = {
+            any_scope_front = {
+                any_scope_general = {
+                    owner = ROOT
+                    this.commander_military_formation ?= {
+                        formation_army_unit_type_fraction = {
+                            target = unit_type:combat_unit_type_gts_1000m
+                            value >= 0.1
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    immediate = {
+        random_scope_war = {
+            limit = {
+                any_scope_front = {
+                    any_scope_general = {
+                        owner = ROOT
+                        formation_army_unit_type_fraction = {
+                            target = unit_type:combat_unit_type_gts_1000m
+                            value >= 0.1
+                        }
+                    }
+                }
+            }
+            save_scope_as = gts_event_war
+        }
+    }
+
+    option = {
+        name = gtsr_diplomatic.2.a
+        default_option = yes
+        add_modifier = {
+            name = gts_instrument_of_fear
+            days = normal_modifier_time
+        }
+    }
+
+}
+
+gtsr_tech_events.1 = {
+    type = country_event
+    placement = root
+
+    duration = 3
+
+    cooldown = { days = never_fire_again_modifier_time }
+
+    event_image = {
+        video = "gtsr_event_18"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+    title = gtsr_tech_events.1.t
+    desc = gtsr_tech_events.1.d
+    flavor = gtsr_tech_events.1.f
+
+    trigger = {
+        #has_technology_researched = carrier_tech
+        any_scope_fleet = {
+            exists = commander
+            any_scope_ship = {
+                is_ship_type = ship_type:ship_type_gts_warshipgirls
+            }
+        }
+    }
+
+    immediate = {
+        random_scope_fleet = {
+            limit = {
+                exists = commander
+                any_scope_ship = {
+                    is_ship_type = ship_type:ship_type_gts_warshipgirls
+                }
+            }
+            commander ?= {
+                save_scope_as = warshipgirls_commander
+            }
+        }
+        random_scope_state = {
+            limit = {
+                is_coastal = yes
+                has_building = building_shipyard
+            }
+            add_devastation = 10
+            save_scope_as = warshipgirls_victim
+        }
+    }
+
+    option = {
+        name = gtsr_tech_events.1.a
+        default_option = yes
+
+        add_modifier = {
+            name = the_navy_of_warshipgirls
+            days = 1800
+        }
+    }
+
+    option = {
+        name = gtsr_tech_events.1.b
+
+        trigger = {
+            any_interest_group = {
+                leader = {
+                    has_role_of_type = admiral
+                }
+            }
+            scope:aviator_commander = {
+                NOT = { has_role_of_type = politician }
+                is_immortal = no
+            }
+        }
+
+        scope:aviator_commander = { retire_character = yes }
+
+        every_interest_group = {
+            limit = {
+                leader = {
+                    has_role_of_type = admiral
+                }
+            }
+            add_modifier = {
+                name = naval_traditions_upheld
+                days = normal_modifier_time
+            }
+        }
+    }
+
+
+}

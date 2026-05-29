@@ -1,0 +1,84 @@
+gts_servent = {
+    texture = "gfx/interface/icons/pops_icons/gts_servent.dds"
+    color = hsv{ 0.54 0.58 0.82 }
+    working_adult_ratio = 0.5 #劳动力比例
+    start_quality_of_life = 10 #初始生活水平
+    wage_weight = 2
+    paid_private_wage = yes
+    education_access = 1
+    literacy_target = 0.8
+    consumption_mult = 1
+    dependent_wage = 0.5	# per year
+    unemployment = yes
+    #unemployment_wealth = 10
+    portrait_age = { value = 30 }
+    portrait_pose = { value = 0 }
+    portrait_is_female = { always = yes }
+    political_engagement_base = 0.40
+    political_engagement_literacy_factor = 0.40
+    political_engagement_mult = {
+        value = 1
+
+        add = {
+            desc = "POP_STARVATION"
+
+            if = {
+                limit = {
+                    is_in_starvation = yes
+                }
+                value = 1
+            }
+        }
+    }
+    qualifications_growth_desc = "GTS_SERVENT_QUALIFICATIONS_DESC"
+    qualifications = {
+        if = {
+            limit = {
+                pop_is_gts_trigger = yes
+                is_peasant_under_serfdom = no
+            }
+            add = {
+                value = literacy_rate
+                subtract = 0.2
+                multiply = 2
+                desc = "QUALIFICATIONS_LITERACY_FACTOR"
+            }
+            add = {
+                value = wealth
+                divide = 2
+                desc = "QUALIFICATIONS_WEALTH_FACTOR"
+            }
+        }
+        if = {
+            limit = {
+                AND = {
+                    pop_is_gts_trigger = yes
+                    pop_is_gts_job_trigger = no
+                }
+            }
+            add = {
+                value = 3000
+                desc = "QUALIFICATIONS_FAVORED_TYPE"
+            }
+        }
+        else_if = {
+            limit = {
+                is_peasant_under_serfdom = yes
+            }
+            value = {
+                desc = "QUALIFICATIONS_PEASANTS_UNDER_SERFDOM"
+                value = 0
+            }
+        }
+        if = {
+            limit = {
+                pop_is_gts_trigger = no
+            }
+            value = {
+                desc = "QUALIFICATIONS_NON_GTS"
+                value = -10000
+            }
+        }
+    }
+
+}

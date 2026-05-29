@@ -1,0 +1,80 @@
+﻿l_simp_chinese:
+ GTS_SERVENT_QUALIFICATIONS_DESC:"11"
+ IS_GTS:"是巨大娘"
+ THERE_ARE_GTS:"巨娘影响"
+ concept_gts:"巨大娘"
+ concept_gts_desc:"巨大化的人类少女，身高从数十米到数百米不等，甚至有少数有着更高的身躯，最初的巨大化原因不明，据说来自我们的世界之外的影响。"
+#社会阶级
+ gtsr_social_hierarchy_trigger_desc: "属于#b 巨娘传承#![concept_cultural_trait]的[concept_culture]"
+ gtsr_social_hierarchy:"巨娘女仆之国阶级体系"
+ gtsr_social_hierarchy_desc:"巨娘女仆之国阶级体系"
+ gtsr_tiny_upper_class:"人类上层阶级"
+ gtsr_tiny_middle_class:"人类中层阶级"
+ gtsr_tiny_lower_class:"人类下层阶级"
+ gtsr_upper_class:"巨娘上层阶级"
+ gtsr_middle_class:"巨娘中层阶级"
+ gtsr_lower_class:"巨娘下层阶级"
+#职业
+ gts_servent: "@gts_servent!$gts_servent_no_icon$"
+ gts_servent_desc: "这些未掌握专业技能的巨娘，通常从事各种初级的工作"
+ gts_servent_only_icon: "@gts_maid!"
+ gts_servent_no_icon: "巨娘平民"
+
+ gts_maid: "@gts_maid!$gts_maid_no_icon$"
+ gts_maid_only_icon: "@gts_maid!"
+ gts_maid_no_icon: "巨娘侍女"
+ gts_maid_desc: "巨大少女侍女。"
+
+ gts_leader: "@gts_leader!$gts_leader_no_icon$"
+ gts_leader_only_icon: "@gts_maid!"
+ gts_leader_no_icon: "巨娘贵族"
+ gts_leader_desc: "巨大少女贵族。"
+
+ gts_cache:"@gts_cache!$gts_cache_no_icon$"
+ gts_cache_only_icon:"@gts_cache!"
+ gts_cache_no_icon:"适格者"
+ gts_cache_desc:"适合成为巨娘的人类少女。"
+
+  pm_gts_maid:"巨娘女仆城镇"
+
+ GTS1:"爱尔兰巨娘王国"
+ GTS1_ADJ:"爱尔兰巨娘王国"
+
+ Lottie:"洛蒂"
+ Aplog:"艾普露"
+ Sinsal:"辛莎尔"
+ Bischa:"毕夏"
+
+ gts_cult1:"巨大娘"
+ heritage_gts:"巨娘"
+ language_gts:"群星之语"
+ language_group_gts:"巨娘语系"
+
+ gts_religion1:"巨娘神教"
+
+ GTS_QUALIFICATIONS_DESC:"只有巨娘能担任此职业"
+ QUALIFICATIONS_NON_GTS:"不是巨娘"
+
+ building_gts_transform:"人类少女巨大化数量"
+ state_gts_birth_rate_mult:"巨娘出生率"
+ state_gts_discover_rate:"巨娘降临概率"
+ gts_transformation_cooldown:"巨大化冷却"
+ building_group_bg_gts_transformation_employee_mult:"巨大化设施容量"
+
+ objective_gts_dominance:"世界巨影"
+ objective_gts_dominance_desc:"带领着这些巨大的少女们统治国家，征服世界吧！"
+ objective_gts_dominance_name_GTS1:"爱尔兰巨娘王国"
+ objective_gts_dominance_desc_GTS1:"爱尔兰在数十年前就出现了巨娘，很快这里便从联合王国中脱离。神秘出现的巨大少女，以及受到未知影响变得丰饶的土地，使得爱尔兰成为了全世界的焦点。"
+ objective_gts_dominance_idle_header:1 "爱咋玩咋玩"
+ objective_gts_dominance_idle_hint:0 "因为根本没写日志"
+
+#政党
+ gts_party_name:"巨娘联盟"
+
+ rule_victorian_century_ai_enhancement_rules:"劳尔斯mod：AI增强"
+ setting_enable_ordinary_victorian_century_ai_enhancement:"初级增强"
+ setting_enable_advanced_victorian_century_ai_enhancement:"高级增强"
+ setting_disable_victorian_century_ai_enhancement:"关闭"
+ setting_enable_ordinary_victorian_century_ai_enhancement_desc:"AI国家根据威望级别获得一半增强buff"
+ setting_enable_advanced_victorian_century_ai_enhancement_desc:"AI国家根据威望级别获得全额增强buff（适用于mod环境下并保留一定挑战性）"
+ setting_disable_victorian_century_ai_enhancement_desc:"AI国家无增强"

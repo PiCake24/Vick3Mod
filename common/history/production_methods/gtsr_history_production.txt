@@ -1,0 +1,12 @@
+PRODUCTION_METHODS = {
+    c:GTS1 ?= {
+        activate_production_method = {
+            building_type = building_urban_center
+            production_method = pm_gts_maid
+        }
+        activate_production_method = {
+            building_type = building_manor_house
+            production_method = pm_manor_house_gts_ownership
+        }
+    }
+}

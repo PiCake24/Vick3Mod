@@ -1,0 +1,5 @@
+gts_religion1 = {
+    icon = "gfx/interface/icons/religion_icons/animist.dds"
+    heritage = heritage_christian
+    color = { 0.6 0.3 0.2 }
+}

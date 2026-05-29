@@ -1,0 +1,693 @@
+﻿building_employment_gts_maid_add = {
+    color = good
+    percent = no
+    decimals = 0
+    game_data = {
+        ai_value = 0
+    }
+}
+country_gts_maid_pol_str_mult={
+    decimals = 1
+    color = neutral
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gts_maid_investment_pool_contribution_add = {
+    decimals = 0
+    color = good
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gts_maid_investment_pool_efficiency_mult = {
+    decimals = 0
+    color = good
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gts_maid_mortality_mult = {
+    decimals = 1
+    color = bad
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+building_gts_maid_standard_of_living_add = {
+    decimals = 1
+    color = good
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gts_maid_standard_of_living_add = {
+    decimals = 1
+    color = good
+    game_data = {
+        ai_value = 0
+    }
+}
+building_gts_maid_mortality_mult = {
+    decimals = 1
+    color = bad
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+building_gts_maid_shares_add = {
+    decimals = 0
+    color = neutral
+    game_data = {
+        ai_value = 0
+    }
+}
+country_gts_maid_voting_power_add = {
+    color = good
+    percent = no
+    decimals = 0
+    game_data = {
+        ai_value = 0
+    }
+}
+
+building_employment_gts_cache_add = {
+    color = good
+    percent = no
+    decimals = 0
+    game_data = {
+        ai_value = 0
+    }
+}
+building_employment_gts_servent_add = {
+    color = good
+    percent = no
+    decimals = 0
+    game_data = {
+        ai_value = 0
+    }
+}
+country_gts_servent_pol_str_mult={
+    decimals = 1
+    color = neutral
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gts_servent_investment_pool_contribution_add = {
+    decimals = 0
+    color = good
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gts_servent_investment_pool_efficiency_mult = {
+    decimals = 0
+    color = good
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gts_servent_mortality_mult = {
+    decimals = 1
+    color = bad
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+building_gts_servent_standard_of_living_add = {
+    decimals = 1
+    color = good
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gts_servent_standard_of_living_add = {
+    decimals = 1
+    color = good
+    game_data = {
+        ai_value = 0
+    }
+}
+building_gts_servent_mortality_mult = {
+    decimals = 1
+    color = bad
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+building_gts_servent_shares_add = {
+    decimals = 0
+    color = neutral
+    game_data = {
+        ai_value = 0
+    }
+}
+country_gts_servent_voting_power_add = {
+    color = good
+    percent = no
+    decimals = 0
+    game_data = {
+        ai_value = 0
+    }
+}
+
+
+building_employment_gts_leader_add = {
+    color = good
+    percent = no
+    decimals = 0
+    game_data = {
+        ai_value = 0
+    }
+}
+country_gts_leader_pol_str_mult={
+    decimals = 1
+    color = neutral
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gts_leader_investment_pool_contribution_add = {
+    decimals = 0
+    color = good
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gts_leader_investment_pool_efficiency_mult = {
+    decimals = 0
+    color = good
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gts_leader_mortality_mult = {
+    decimals = 1
+    color = bad
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+building_gts_leader_standard_of_living_add = {
+    decimals = 1
+    color = good
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gts_leader_standard_of_living_add = {
+    decimals = 1
+    color = good
+    game_data = {
+        ai_value = 0
+    }
+}
+building_gts_leader_mortality_mult = {
+    decimals = 1
+    color = bad
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+building_gts_leader_shares_add = {
+    decimals = 0
+    color = neutral
+    game_data = {
+        ai_value = 0
+    }
+}
+country_gts_leader_voting_power_add = {
+    color = good
+    percent = no
+    decimals = 0
+    game_data = {
+        ai_value = 0
+    }
+}
+
+goods_output_gts_liquid_add = {
+    decimals=1
+    color=good
+    game_data={
+        ai_value=0
+    }
+}
+goods_input_gts_liquid_add = {
+    decimals=1
+    color=bad
+    game_data={
+        ai_value=0
+    }
+}
+goods_output_gts_socks_add = {
+    decimals=1
+    color=good
+    game_data={
+        ai_value=0
+    }
+}
+goods_output_gts_liquid_mult = {
+    decimals=1
+    color=good
+    percent = yes
+    game_data={
+        ai_value=0
+    }
+}
+goods_input_gts_liquid_mult = {
+    decimals=1
+    color=bad
+    percent = yes
+    game_data={
+        ai_value=0
+    }
+}
+goods_output_gts_socks_mult = {
+    decimals=1
+    color=good
+    percent = yes
+    game_data={
+        ai_value=0
+    }
+}
+goods_input_gts_socks_add = {
+    decimals=1
+    color=bad
+    game_data={
+        ai_value=0
+    }
+}
+goods_input_gts_socks_mult = {
+    decimals=1
+    color=bad
+    percent = yes
+    game_data={
+        ai_value=0
+    }
+}
+goods_output_gts_shoes_add = {
+    decimals=1
+    color=good
+    game_data={
+        ai_value=0
+    }
+}
+goods_output_gts_shoes_mult = {
+    decimals=1
+    color=good
+    percent = yes
+    game_data={
+        ai_value=0
+    }
+}
+goods_input_gts_shoes_add = {
+    decimals=1
+    color=bad
+    game_data={
+        ai_value=0
+    }
+}
+goods_input_gts_shoes_mult = {
+    decimals=1
+    color=bad
+    percent = yes
+    game_data={
+        ai_value=0
+    }
+}
+goods_output_gts_cloth_add = {
+    decimals=1
+    color=good
+    game_data={
+        ai_value=0
+    }
+}
+goods_output_gts_cloth_mult = {
+    decimals=1
+    color=good
+    percent = yes
+    game_data={
+        ai_value=0
+    }
+}
+goods_input_gts_cloth_add = {
+    decimals=1
+    color=bad
+    game_data={
+        ai_value=0
+    }
+}
+goods_input_gts_cloth_mult = {
+    decimals=1
+    color=bad
+    percent = yes
+    game_data={
+        ai_value=0
+    }
+}
+
+building_farmers_mortality_mult = {
+    decimals=1
+    color=bad
+    percent = yes
+    game_data={
+        ai_value=0
+    }
+}
+building_gts_transform = {
+    script_only = yes
+    decimals=0
+    color=good
+    game_data={
+        ai_value=0
+    }
+}
+
+state_gts_birth_rate_mult={
+    script_only = yes
+    decimals=0
+    color=good
+    percent=yes
+    game_data={
+        ai_value=0
+    }
+}
+state_gts_discover_rate = {
+    script_only = yes
+    decimals=2
+    color=good
+    game_data={
+        ai_value=1
+    }
+    percent = yes
+}
+building_group_bg_gts_transformation_employee_mult = {
+    decimals=0
+    percent=yes
+    color=bad
+    game_data={
+        ai_value=0
+    }
+}
+
+interest_group_ig_gts_pol_str_mult = {
+    decimals=0
+    color=neutral
+    percent=yes
+    game_data={
+        ai_value=0
+    }
+}
+country_gtsr_upper_class_acceptance_max_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_upper_class_acceptance_min_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_middle_class_acceptance_max_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_middle_class_acceptance_min_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_lower_class_acceptance_max_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_lower_class_acceptance_min_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+
+country_gtsr_tiny_upper_class_acceptance_max_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_tiny_upper_class_acceptance_min_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_tiny_middle_class_acceptance_max_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_tiny_middle_class_acceptance_min_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_tiny_lower_class_acceptance_max_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_tiny_lower_class_acceptance_min_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+
+country_gtsr_upper_class_cultural_acceptance_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_middle_class_cultural_acceptance_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_lower_class_cultural_acceptance_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_tiny_upper_class_cultural_acceptance_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_tiny_middle_class_cultural_acceptance_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+country_gtsr_tiny_lower_class_cultural_acceptance_add = {
+    decimals = 0
+    color = bad
+    percent = no
+    game_data = {
+        ai_value = 0
+        tags = { cultural_acceptance }
+    }
+}
+
+building_gts_cloth_factory_throughput_add={
+    decimals=0
+    color=good
+    percent=yes
+    game_data={
+        ai_value=0
+    }
+}
+building_gts_residential_area_throughput_add={
+    decimals=0
+    color=good
+    percent=yes
+    game_data={
+        ai_value=0
+    }
+}
+state_gtsr_tiny_lower_class_mortality_mult = {
+    decimals = 1
+    color = bad
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gtsr_tiny_middle_class_mortality_mult = {
+    decimals = 1
+    color = bad
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gtsr_tiny_upper_class_mortality_mult = {
+    decimals = 1
+    color = bad
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gtsr_lower_class_mortality_mult = {
+    decimals = 1
+    color = bad
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gtsr_middle_class_mortality_mult = {
+    decimals = 1
+    color = bad
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gtsr_upper_class_mortality_mult = {
+    decimals = 1
+    color = bad
+    percent = yes
+    game_data = {
+        ai_value = 0
+    }
+}
+state_gtsr_tiny_lower_class_standard_of_living_add={
+    decimals=0
+    color=good
+    percent=no
+    game_data={
+        ai_value=0
+    }
+}
+state_gtsr_tiny_middle_class_standard_of_living_add={
+    decimals=0
+    color=good
+    percent=no
+    game_data={
+        ai_value=0
+    }
+}
+state_gtsr_tiny_upper_class_standard_of_living_add={
+    decimals=0
+    color=good
+    percent=no
+    game_data={
+        ai_value=0
+    }
+}
+state_gtsr_lower_class_standard_of_living_add={
+    decimals=0
+    color=good
+    percent=no
+    game_data={
+        ai_value=0
+    }
+}
+state_gtsr_middle_class_standard_of_living_add={
+    decimals=0
+    color=good
+    percent=no
+    game_data={
+        ai_value=0
+    }
+}
+state_gtsr_upper_class_standard_of_living_add={
+    decimals=0
+    color=good
+    percent=no
+    game_data={
+        ai_value=0
+    }
+}

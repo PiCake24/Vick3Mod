@@ -1,0 +1,115 @@
+texticon = {
+    icon = gts_cache
+    iconsize = {
+        offset = { 0 50 }
+        texture = "gfx/interface/icons/pops_icons/gts_cache.dds"
+        fontsize = 250
+    }
+}
+
+texticon = {
+    icon = gts_cache
+    iconsize = {
+        offset = { 0 5 }
+        texture = "gfx/interface/icons/pops_icons/gts_cache_15.dds"
+        fontsize = 30
+    }
+}
+texticon = {
+    icon = gts_maid
+    iconsize = {
+        offset = { 0 50 }
+        texture = "gfx/interface/icons/pops_icons/gts_maid.dds"
+        fontsize = 250
+    }
+}
+
+texticon = {
+    icon = gts_maid
+    iconsize = {
+        offset = { 0 5 }
+        texture = "gfx/interface/icons/pops_icons/gts_maid_15.dds"
+        fontsize = 30
+    }
+}
+
+texticon = {
+    icon = gts_servent
+    iconsize = {
+        offset = { 0 50 }
+        texture = "gfx/interface/icons/pops_icons/gts_servent.dds"
+        fontsize = 250
+    }
+}
+
+texticon = {
+    icon = gts_servent
+    iconsize = {
+        offset = { 0 5 }
+        texture = "gfx/interface/icons/pops_icons/gts_servent_15.dds"
+        fontsize = 30
+    }
+}
+
+texticon = {
+    icon = gts_leader
+    iconsize = {
+        offset = { 0 50 }
+        texture = "gfx/interface/icons/pops_icons/gts_leader.dds"
+        fontsize = 250
+    }
+}
+
+texticon = {
+    icon = gts_leader
+    iconsize = {
+        offset = { 0 5 }
+        texture = "gfx/interface/icons/pops_icons/gts_leader_15.dds"
+        fontsize = 30
+    }
+}
+texticon = {
+    icon = gts_liquid
+    iconsize = {
+        size = { 25 25 }
+        offset = { 0 7 }
+        texture = "gfx/interface/icons/goods_icons/gts_liquid.dds"
+        fontsize = 20
+    }
+}
+
+texticon = {
+    icon = gts_shoes
+    iconsize = {
+        size = { 25 25 }
+        offset = { 0 7 }
+        texture = "gfx/interface/icons/goods_icons/gts_shoes.dds"
+        fontsize = 20
+    }
+}
+texticon = {
+    icon = gts_socks
+    iconsize = {
+        size = { 25 25 }
+        offset = { 0 7 }
+        texture = "gfx/interface/icons/goods_icons/gts_socks.dds"
+        fontsize = 20
+    }
+}
+texticon = {
+    icon = gts_cloth
+    iconsize = {
+        size = { 25 25 }
+        offset = { 0 7 }
+        texture = "gfx/interface/icons/goods_icons/gts_cloth.dds"
+        fontsize = 20
+    }
+}
+texticon = {
+    icon = ig_gts
+    iconsize = {
+        offset = { 0 7 }
+        texture = "gfx/interface/icons/ig_icons/ig_gts_30.dds"
+        fontsize = 22
+    }
+}

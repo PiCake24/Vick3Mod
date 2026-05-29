@@ -1,0 +1,42 @@
+#巨娘居住区
+pmg_base_building_gts_residential_area = {
+    texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    production_methods = {
+        pm_gts_residential1
+    }
+}
+#巨娘衣物工厂
+pmg_base_gts_cloth_method = {
+    texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    production_methods = {
+        pm_base_gts_cloth_method1
+        pm_base_gts_cloth_method2
+        pm_base_gts_cloth_method3
+    }
+}
+pmg_secondary_gts_cloth_method = {
+    texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+    production_methods = {
+        pm_secondary_gts_cloth_method1
+        pm_secondary_gts_cloth_method2
+        pm_secondary_gts_cloth_method3
+        pm_secondary_gts_cloth_method4
+    }
+}
+pmg_gts_cloth_automatic = {
+    texture = "gfx/interface/icons/generic_icons/mixed_icon_automation.dds"
+    production_methods = {
+        pm_gts_cloth_automatic1
+        pm_gts_cloth_automatic2
+        pm_gts_cloth_automatic3
+    }
+}
+pmg_gts_sift = {
+    texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+    production_methods = {
+        pm_gts_sift1
+        pm_gts_summon
+        pm_growth_drug
+        pm_gts_lily
+    }
+}

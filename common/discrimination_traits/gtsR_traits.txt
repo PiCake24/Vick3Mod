@@ -1,0 +1,9 @@
+heritage_gts = {
+    type = heritage
+    trait_group = heritage_group_gts
+}
+
+language_gts = {
+    type = language
+    trait_group = language_group_gts
+}

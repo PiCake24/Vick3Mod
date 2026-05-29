@@ -1,0 +1,130 @@
+ideology_gtsisum_cruel = {
+    icon = "gfx/interface/icons/ideology_icons/ideology_leader/gtsisum_cruel.dds"
+
+    character_ideology = yes
+
+    lawgroup_rights_of_women = {
+        law_womens_suffrage = strongly_approve
+        law_women_in_the_workplace = neutral
+        law_women_own_property = disapprove
+        law_no_womens_rights = strongly_disapprove
+    }
+
+    country_trigger = {
+        has_variable = gtsr_country
+    }
+
+    interest_group_leader_trigger = {
+        is_interest_group_type = ig_gts
+        has_culture = gts_cult1
+    }
+
+    non_interest_group_leader_trigger = {
+        # Agitators should have an ideology at odds with current laws
+        NAND = {
+            has_role = agitator
+            owner = {
+                has_law_or_variant = law_type:law_gts_ruler
+            }
+        }
+        has_culture = gts_cult1
+        interest_group = {
+            is_interest_group_type = ig_gts
+        }
+    }
+
+    interest_group_leader_weight = {
+        value = 300
+        # more likely with limited women's rights
+        if = {
+            limit = {
+                owner = {
+                    has_law_or_variant = law_type:law_gts_discriminated
+                }
+            }
+            multiply = {
+                value = 2
+            }
+        }
+    }
+
+    non_interest_group_leader_weight = {
+        value = 300
+        # more likely with limited women's rights
+        if = {
+            limit = {
+                owner = {
+                    has_law_or_variant = law_type:law_gts_discriminated
+                }
+            }
+            multiply = {
+                value = 2
+            }
+        }
+    }
+}
+ideology_gtsisum_gentle = {
+    icon = "gfx/interface/icons/ideology_icons/ideology_leader/gtsisum_gentle.dds"
+
+    character_ideology = yes
+
+    lawgroup_rights_of_women = {
+        law_womens_suffrage = strongly_approve
+        law_women_in_the_workplace = neutral
+        law_women_own_property = disapprove
+        law_no_womens_rights = strongly_disapprove
+    }
+
+    country_trigger = {
+        has_variable = gtsr_country
+    }
+
+    interest_group_leader_trigger = {
+        is_interest_group_type = ig_gts
+        has_culture = gts_cult1
+    }
+
+    non_interest_group_leader_trigger = {
+        # Agitators should have an ideology at odds with current laws
+        NAND = {
+            has_role = agitator
+            owner = {
+                has_law_or_variant = law_type:law_gts_ruler
+            }
+        }
+        has_culture = gts_cult1
+        interest_group = {
+            is_interest_group_type = ig_gts
+        }
+    }
+
+    interest_group_leader_weight = {
+        value = 300
+        # more likely with limited women's rights
+        if = {
+            limit = {
+                owner = {
+                    has_law_or_variant = law_type:law_gts_discriminated
+                }
+            }
+            multiply = {
+                value = 2
+            }
+        }
+    }
+
+    non_interest_group_leader_weight = {
+        value = 300
+        # more likely with limited women's rights
+        if = {
+            limit = {
+                owner = {
+                    has_law_or_variant = law_type:law_gts_discriminated
+                }
+            }
+            multiply = {
+                value = 2
+            }
+        }
+    }
+}

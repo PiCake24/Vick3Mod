@@ -1,0 +1,132 @@
+gtsr_culture_convert_pulse_effect = {
+    if = {
+        limit = {
+            #OR = {
+                #has_law_or_variant = law_type:law_wsg_ruler
+                #has_law_or_variant = law_type:law_wsg_only
+            #}
+            religion = {
+                NOR = {
+                    is_gtsr_religion = yes
+                    this = rel:atheist
+                }
+            }
+        }
+        #wsg_set_state_religion_effect = yes
+    }
+    if = {
+        limit = {
+            OR = {
+                #has_law_or_variant = law_type:law_wsg_only
+            }
+            NOT = { country_has_primary_culture = cu:gts_cult1 }
+        }
+        #add_primary_culture = cu:gts_cult1
+        set_variable = {
+            name = var_abolished_cda_permanently
+        }
+        #research_equipment_startup_effect = yes
+    }
+    hidden_effect = {
+        update_gtsr_pop_culture = yes
+    }
+}
+
+update_gtsr_pop_culture = {
+    every_scope_pop = {
+        limit = {
+            pop_is_gts_job_trigger = yes
+            NOT = { culture = cu:gts_cult1 }
+        }
+        change_pop_culture = {
+            target = cu:gts_cult1
+            value = 1
+        }
+#        if = {
+#            limit = {
+#                is_pop_type = wsg_cache
+#            }
+#            change_poptype = pop_type:wsg_bureaucrats
+#        }
+    }
+    every_scope_pop = {
+        limit = {
+            culture = cu:gts_cult1
+            religion != owner.religion
+            owner = {
+                country_average_religious_acceptance = {
+                    target = prev.religion
+                    value < 15
+                }
+            }
+        }
+        change_pop_religion = {
+            target = owner.religion
+            value = 1
+        }
+    }
+}
+
+gtsr_pop_startup_effect = {
+    hidden_effect = {
+        every_scope_state = {
+            limit = {
+                is_incorporated = yes
+                is_sea_adjacent = yes
+            }
+            every_scope_pop = {
+                limit = {
+                    NOR = {
+                        strata = lower
+                        culture = cu:gts_cult1
+                        is_pop_type = farmers
+                        AND = {
+                            is_pop_type = aristocrats
+                            owner = {
+                                has_law_or_variant = law_type:law_serfdom
+                            }
+                        }
+                    }
+                }
+                change_pop_culture = {
+                    target = cu:gts_cult1
+                    value = 0.1
+                }
+            }
+        }
+    }
+}
+
+update_gts_pop_culture = {
+    every_scope_pop = {
+        limit = {
+            pop_is_gts_job_trigger = yes
+            NOT = { culture = cu:gts_cult1 }
+        }
+        change_pop_culture = {
+            target = cu:gts_cult1
+            value = 1
+        }
+    }
+    every_scope_pop = {
+        limit = {
+            culture = cu:gts_cult1
+            religion != owner.religion
+            owner = {
+                country_average_religious_acceptance = {
+                    target = prev.religion
+                    value < 15
+                }
+            }
+        }
+        change_pop_religion = {
+            target = owner.religion
+            value = 1
+        }
+    }
+}
+
+gts_pop_discover_effect = {
+
+
+}

@@ -1,0 +1,99 @@
+company_gts_cloth1 = { #神女织造公司
+    icon = "gfx/interface/icons/company_icons/company_gts_cloth1.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_gts1.dds"
+
+    flavored_company = no
+
+    building_types = {
+        building_gts_cloth_factory
+    }
+
+    extension_building_types = {
+        building_livestock_ranch
+    }
+
+    possible_prestige_goods = {
+        prestige_good_gts_cloths
+        prestige_good_gts_socks
+        prestige_good_gts_shoes
+
+    }
+
+    potential = { #显示为可能公司
+        is_ai = no
+        #或许可以加个地域区别，美洲运输、亚洲运输之类的
+    }
+
+    possible = {
+        any_scope_state = {
+            any_scope_building = {
+                OR = {
+                    is_building_type = building_gts_cloth_factory
+                }
+                level >= 5
+            }
+        }
+    }
+
+    prosperity_modifier = {
+        state_radicals_from_political_movements_mult = -0.3
+        state_trade_advantage_mult = 0.25
+        country_tax_income_add = 50000
+        building_gts_cloth_factory_throughput_add = 0.2
+        country_max_companies_add = 1
+        building_trade_center_throughput_add = 0.25
+    }
+
+    ai_weight = {
+        value = 0
+    }
+}
+
+company_gts_growth = { #巨影开发
+    icon = "gfx/interface/icons/company_icons/company_gts_growth.dds"
+    background = "gfx/interface/icons/company_icons/company_backgrounds/comp_gts2.dds"
+
+    flavored_company = no
+
+    building_types = {
+        building_gts_residential_area
+    }
+
+    extension_building_types = {
+        building_gts_transformation
+    }
+
+    possible_prestige_goods = {
+        prestige_good_gts_liquid
+
+    }
+
+    potential = { #显示为可能公司
+        is_ai = no
+        #或许可以加个地域区别，美洲运输、亚洲运输之类的
+    }
+
+    possible = {
+        any_scope_state = {
+            any_scope_building = {
+                OR = {
+                    is_building_type = building_gts_residential_area
+                }
+                level >= 5
+            }
+        }
+    }
+
+    prosperity_modifier = {
+        state_education_access_add = 1
+        state_construction_mult = 0.5
+        state_tax_waste_add = -0.2
+        country_tax_income_add = 50000
+        building_gts_residential_area_throughput_add = 0.2
+        country_max_companies_add = 1
+    }
+
+    ai_weight = {
+        value = 0
+    }
+}

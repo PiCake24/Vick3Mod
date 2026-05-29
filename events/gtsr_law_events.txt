@@ -1,0 +1,551 @@
+namespace = gtsr_law_event
+
+gtsr_law_event.1 = {
+    type = country_event
+    placement = root
+    title = gtsr_law_event.1.t
+    desc = gtsr_law_event.1.d
+    flavor = gtsr_law_event.1.f
+
+    category = enactment
+
+    event_image = {
+        video = "gtsr_event_11"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+    duration = 3
+
+    cooldown = { days = normal_modifier_time }
+
+    trigger = {
+        enacting_any_law = yes
+        enactment_setback_count > 0
+        has_variable = gtsr_country
+    }
+
+    immediate = {
+        currently_enacting_law = {
+            save_scope_as = current_law_scope
+        }
+        set_variable = {
+            name = gtsr_law_event
+        }
+    }
+
+    cancellation_trigger = {
+        NOT = { currently_enacting_law = scope:current_law_scope }
+    }
+
+    option = {
+        name = gtsr_law_event.1.1 							# agree to the proposal. decrease enactment time, but anger opposing IGs
+        default_option = yes
+
+        add_enactment_modifier = {
+            name = gts_cursh_potlic
+        }
+        add_enactment_setback = -1
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            add_devastation = 5
+        }
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            kill_population_percent_in_state = {
+                percent = 0.005
+            }
+        }
+    }
+
+    option = {
+        name = gtsr_law_event.1.2  							# reject the proposal, slightly increase enactment time
+    }
+}
+
+gtsr_law_event.2 = {
+    type = country_event
+    placement = root
+    title = gtsr_law_event.2.t
+    desc = gtsr_law_event.2.d
+    flavor = gtsr_law_event.2.f
+
+    category = enactment
+
+    event_image = {
+        video = "gtsr_event_14"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+    duration = 3
+
+    cooldown = { days = normal_modifier_time }
+
+    trigger = {
+        enacting_any_law = yes
+        enactment_setback_count > 0
+        has_variable = gtsr_country
+    }
+
+    immediate = {
+        currently_enacting_law = {
+            save_scope_as = current_law_scope
+        }
+        set_variable = {
+            name = gtsr_law_event
+        }
+    }
+
+    cancellation_trigger = {
+        NOT = { currently_enacting_law = scope:current_law_scope }
+    }
+
+    option = {
+        name = gtsr_law_event.2.1 							# agree to the proposal. decrease enactment time, but anger opposing IGs
+        default_option = yes
+
+        add_enactment_modifier = {
+            name = gts_cursh_potlic
+        }
+        add_enactment_setback = -1
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            add_devastation = 5
+        }
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            kill_population_percent_in_state = {
+                percent = 0.005
+            }
+        }
+    }
+
+    option = {
+        name = gtsr_law_event.2.2  							# reject the proposal, slightly increase enactment time
+    }
+}
+
+gtsr_law_event.3 = {
+    type = country_event
+    placement = root
+    title = gtsr_law_event.3.t
+    desc = gtsr_law_event.3.d
+    flavor = gtsr_law_event.3.f
+
+    category = enactment
+
+    event_image = {
+        video = "gtsr_event_8"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+    duration = 3
+
+    cooldown = { days = normal_modifier_time }
+
+    trigger = {
+        enacting_any_law = yes
+        enactment_setback_count > 0
+        has_variable = gtsr_country
+    }
+
+    immediate = {
+        currently_enacting_law = {
+            save_scope_as = current_law_scope
+        }
+        set_variable = {
+            name = gtsr_law_event
+        }
+    }
+
+    cancellation_trigger = {
+        NOT = { currently_enacting_law = scope:current_law_scope }
+    }
+
+    option = {
+        name = gtsr_law_event.3.1 							# agree to the proposal. decrease enactment time, but anger opposing IGs
+        default_option = yes
+
+        add_enactment_modifier = {
+            name = gts_cursh_potlic
+        }
+        add_enactment_setback = -1
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            add_devastation = 5
+        }
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            kill_population_percent_in_state = {
+                percent = 0.005
+            }
+        }
+    }
+
+    option = {
+        name = gtsr_law_event.3.2  							# reject the proposal, slightly increase enactment time
+    }
+}
+
+gtsr_law_event.4 = {
+    type = country_event
+    placement = root
+    title = gtsr_law_event.4.t
+    desc = gtsr_law_event.4.d
+    flavor = gtsr_law_event.4.f
+
+    category = enactment
+
+    event_image = {
+        video = "gtsr_event_6"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+    duration = 3
+
+    cooldown = { days = normal_modifier_time }
+
+    trigger = {
+        enacting_any_law = yes
+        enactment_setback_count > 0
+        has_variable = gtsr_country
+    }
+
+    immediate = {
+        currently_enacting_law = {
+            save_scope_as = current_law_scope
+        }
+        set_variable = {
+            name = gtsr_law_event
+        }
+    }
+
+    cancellation_trigger = {
+        NOT = { currently_enacting_law = scope:current_law_scope }
+    }
+
+    option = {
+        name = gtsr_law_event.4.1 							# agree to the proposal. decrease enactment time, but anger opposing IGs
+        default_option = yes
+
+        add_enactment_modifier = {
+            name = gts_cursh_potlic
+        }
+        add_enactment_setback = -1
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            add_devastation = 5
+        }
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            kill_population_percent_in_state = {
+                percent = 0.005
+            }
+        }
+    }
+
+    option = {
+        name = gtsr_law_event.4.2  							# reject the proposal, slightly increase enactment time
+    }
+}
+
+gtsr_law_event.5 = {
+    type = country_event
+    placement = root
+    title = gtsr_law_event.5.t
+    desc = gtsr_law_event.5.d
+    flavor = gtsr_law_event.5.f
+
+    category = enactment
+
+    event_image = {
+        video = "gtsr_event_5"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+    duration = 3
+
+    cooldown = { days = normal_modifier_time }
+
+    trigger = {
+        enacting_any_law = yes
+        enactment_setback_count > 0
+        has_variable = gtsr_country
+    }
+
+    immediate = {
+        currently_enacting_law = {
+            save_scope_as = current_law_scope
+        }
+        set_variable = {
+            name = gtsr_law_event
+        }
+    }
+
+    cancellation_trigger = {
+        NOT = { currently_enacting_law = scope:current_law_scope }
+    }
+
+    option = {
+        name = gtsr_law_event.5.1 							# agree to the proposal. decrease enactment time, but anger opposing IGs
+        default_option = yes
+
+        add_enactment_modifier = {
+            name = gts_cursh_potlic
+        }
+        add_enactment_setback = -1
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            add_devastation = 5
+        }
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            kill_population_percent_in_state = {
+                percent = 0.005
+            }
+        }
+    }
+
+    option = {
+        name = gtsr_law_event.5.2  							# reject the proposal, slightly increase enactment time
+    }
+}
+gtsr_law_event.6 = {
+    type = country_event
+    placement = root
+    title = gtsr_law_event.6.t
+    desc = gtsr_law_event.6.d
+    flavor = gtsr_law_event.6.f
+
+    category = enactment
+
+    event_image = {
+        video = "gtsr_event_4"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+    duration = 3
+
+    cooldown = { days = normal_modifier_time }
+
+    trigger = {
+        enacting_any_law = yes
+        enactment_setback_count > 0
+        has_variable = gtsr_country
+    }
+
+    immediate = {
+        currently_enacting_law = {
+            save_scope_as = current_law_scope
+        }
+        set_variable = {
+            name = gtsr_law_event
+        }
+    }
+
+    cancellation_trigger = {
+        NOT = { currently_enacting_law = scope:current_law_scope }
+    }
+
+    option = {
+        name = gtsr_law_event.6.1 							# agree to the proposal. decrease enactment time, but anger opposing IGs
+        default_option = yes
+
+        add_enactment_modifier = {
+            name = gts_cursh_potlic
+        }
+        add_enactment_setback = -1
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            add_devastation = 5
+        }
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            kill_population_percent_in_state = {
+                percent = 0.005
+            }
+        }
+    }
+
+    option = {
+        name = gtsr_law_event.6.2  							# reject the proposal, slightly increase enactment time
+    }
+}
+gtsr_law_event.7 = {
+    type = country_event
+    placement = root
+    title = gtsr_law_event.7.t
+    desc = gtsr_law_event.7.d
+    flavor = gtsr_law_event.7.f
+
+    category = enactment
+
+    event_image = {
+        video = "gtsr_event_3"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+    duration = 3
+
+    cooldown = { days = normal_modifier_time }
+
+    trigger = {
+        enacting_any_law = yes
+        enactment_setback_count > 0
+        has_variable = gtsr_country
+    }
+
+    immediate = {
+        currently_enacting_law = {
+            save_scope_as = current_law_scope
+        }
+        set_variable = {
+            name = gtsr_law_event
+        }
+    }
+
+    cancellation_trigger = {
+        NOT = { currently_enacting_law = scope:current_law_scope }
+    }
+
+    option = {
+        name = gtsr_law_event.7.1 							# agree to the proposal. decrease enactment time, but anger opposing IGs
+        default_option = yes
+
+        add_enactment_modifier = {
+            name = gts_cursh_potlic
+        }
+        add_enactment_setback = -1
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            add_devastation = 5
+        }
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            kill_population_percent_in_state = {
+                percent = 0.005
+            }
+        }
+    }
+
+    option = {
+        name = gtsr_law_event.7.2  							# reject the proposal, slightly increase enactment time
+    }
+}
+gtsr_law_event.8 = {
+    type = country_event
+    placement = root
+    title = gtsr_law_event.8.t
+    desc = gtsr_law_event.8.d
+    flavor = gtsr_law_event.8.f
+
+    category = enactment
+
+    event_image = {
+        video = "gtsr_event_2"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_scales.dds"
+
+    duration = 3
+
+    cooldown = { days = normal_modifier_time }
+
+    trigger = {
+        enacting_any_law = yes
+        enactment_setback_count > 0
+        has_variable = gtsr_country
+    }
+
+    immediate = {
+        currently_enacting_law = {
+            save_scope_as = current_law_scope
+        }
+        set_variable = {
+            name = gtsr_law_event
+        }
+    }
+
+    cancellation_trigger = {
+        NOT = { currently_enacting_law = scope:current_law_scope }
+    }
+
+    option = {
+        name = gtsr_law_event.8.1 							# agree to the proposal. decrease enactment time, but anger opposing IGs
+        default_option = yes
+
+        add_enactment_modifier = {
+            name = gts_cursh_potlic
+        }
+        add_enactment_setback = -1
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            add_devastation = 5
+        }
+        random_scope_state = {
+            limit = {
+                is_capital = yes
+            }
+            kill_population_percent_in_state = {
+                percent = 0.005
+            }
+        }
+    }
+
+    option = {
+        name = gtsr_law_event.8.2  							# reject the proposal, slightly increase enactment time
+    }
+}
+

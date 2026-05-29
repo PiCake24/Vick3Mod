@@ -1,0 +1,10 @@
+﻿GTS1 = {
+    color = hsv{ 0.89  0.7  0.9 }
+    #social_hierarchy = gts_maid_social_hierarchy
+    country_type = unrecognized
+
+    tier = kingdom
+    religion = gts_religion1
+    cultures = { irish gts_cult1 }
+    capital = STATE_LEINSTER
+}

@@ -1,0 +1,73 @@
+building_gts_residential_area = {
+    building_group = bg_light_industry
+    icon = "gfx/interface/icons/building_icons/building_gts_residential_area.dds"
+    city_type = city
+    levels_per_mesh = 50
+
+    ai_nationalization_desire = -0.25 # AI is generally fine with privatizing consumer goods industries
+
+    unlocking_technologies = {
+        gts_growth_tech1
+    }
+
+    production_method_groups = {
+        pmg_base_building_gts_residential_area
+        #pmg_canning
+        #pmg_distillery
+        #pmg_automation_building_food_industry
+    }
+
+    required_construction = 400
+    ownership_type = self
+
+    background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_gts_residential.dds"
+}
+building_gts_cloth_factory = {
+    building_group = bg_light_industry
+    icon = "gfx/interface/icons/building_icons/building_gts_cloth_factory.dds"
+    city_type = city
+    levels_per_mesh = 50
+
+    ai_nationalization_desire = -0.25 # AI is generally fine with privatizing consumer goods industries
+
+    unlocking_technologies = {
+        gts_growth_tech1
+    }
+
+    production_method_groups = {
+        pmg_base_gts_cloth_method
+        pmg_secondary_gts_cloth_method
+        pmg_gts_cloth_automatic
+    }
+
+    required_construction = 500
+    ownership_type = self
+
+    background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_gts_residential.dds"
+}
+
+building_gts_transformation = {
+    building_group = bg_gts_transformation
+    city_type = none
+    #has_max_level = yes
+    levels_per_mesh = 50
+    potential = {
+        owner = {
+            #has_law_or_variant = law_type:
+            #is_ai = no
+        }
+    }
+    unlocking_technologies = {
+        gts_growth_tech1
+    }
+    min_raise_to_hire = -1
+    production_method_groups = {
+        pmg_gts_sift
+    }
+    should_auto_expand = {
+        always = no
+    }
+    icon = "gfx/interface/icons/building_icons/building_gts_transformation.dds"
+    required_construction = 400
+    background = "gfx/interface/icons/building_icons/backgrounds/building_panel_bg_gts_residential.dds"
+}

@@ -1,0 +1,11 @@
+
+GTS1 = { # Ireland
+    pattern = "pattern_solid.tga"
+    color1 = "white"
+
+    colored_emblem = {
+        texture = "ce_harp_ireland.dds"
+        color1 = "green"
+        color2 = "yellow"
+    }
+}

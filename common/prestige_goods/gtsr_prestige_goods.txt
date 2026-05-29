@@ -1,0 +1,20 @@
+prestige_good_gts_cloths = {
+    base_good = gts_cloth
+    prestige_bonus = 0.1
+    texture = "gfx/interface/icons/goods_icons/gts_cloth1.dds"
+}
+prestige_good_gts_socks = {
+    base_good = gts_socks
+    prestige_bonus = 0.1
+    texture = "gfx/interface/icons/goods_icons/gts_socks1.dds"
+}
+prestige_good_gts_shoes = {
+    base_good = gts_shoes
+    prestige_bonus = 0.1
+    texture = "gfx/interface/icons/goods_icons/gts_shoes1.dds"
+}
+prestige_good_gts_liquid = {
+    base_good = gts_liquid
+    prestige_bonus = 0.1
+    texture = "gfx/interface/icons/goods_icons/gts_liquid1.dds"
+}

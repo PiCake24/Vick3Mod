@@ -1,0 +1,10 @@
+﻿l_english:
+gtsr_main.1.t: "Gigantic Incident Report"
+gtsr_main.1.d: "There have been numerous reports of girls becoming gigantic in [ROOT.GetCountry.GetCapital.GetName]!"
+gtsr_main.1.f: "According to reports compiled by the local administrative department, hundreds of girls have grown to a height of more than ten meters in the past day. The reason is unknown, but many residents believe that it may be related to the recent astronomical anomalies.\n\n"They suddenly became huge at home, and the surrounding streets and houses were suddenly crushed by their huge bodies! \n\n"Neighbors said that they often see bright lights flashing in the sky at night, and some people hear the roar of something."\n\nFortunately, these giant girls are still sane, and the local government has placed them together, and scholars are studying the reasons behind the phenomenon of gigantism."
+gtsr_main.1.a: "Disturbing."
+gtsr_main.1.tooltips: "5% of the population of [ROOT.GetCountry.GetCapital.GetName] becomes [concept_gts]"
+gtsr_main.2.t: "Huge reverse research completed"
+gtsr_main.2.d: "We have initially understood the secret of these gigantic girls--now we call them "[concept_gts]"--"
+gtsr_main.2.f: "Scholars have found that regardless of the reason why these girls originally became gigantic, their current body fluids also contain things that can make people gigantic. However, current tests show that only some girls aged 14-30 can obtain this ability.\n\nNow, we can already extract their body fluids to make more girls gigantic!"
+gtsr_main.2.a: "They will make our country great again!"

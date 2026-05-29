@@ -1,0 +1,15 @@
+GLOBAL = {
+    set_global_variable = { name =culture_gts1 value = cu:gts_cult1 }
+    #cu:gts_cult1 = {
+    #    set_fervor = 100
+    #}
+
+    every_country = {
+        limit = {
+            has_variable =  gtsr_country
+            #has_law_or_variant = law_type:law_wsg_ruler
+        }
+        trigger_event = { id = gtsr.1 }
+        recalculate_pop_ig_support = yes
+    }
+}

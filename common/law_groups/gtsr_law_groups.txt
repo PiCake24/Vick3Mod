@@ -1,0 +1,19 @@
+lawgroup_gts_rights = {
+    law_group_category = other
+    enactment_approval_mult = 1.5
+    ideological_opinion_impact = 1.0
+    affected_by_regime_change = yes
+    #change_allowed_trigger = {
+    #    NOT = {
+    #        has_modifier = forced_warshipgirls_right
+    #    }
+    #}
+}
+
+lawgroup_tiny_rights = {
+    law_group_category = other
+    enactment_approval_mult = 1.5
+    ideological_opinion_impact = 1.0
+    affected_by_regime_change = yes
+
+}

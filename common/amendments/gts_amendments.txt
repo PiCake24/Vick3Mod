@@ -1,0 +1,77 @@
+amendment_gts_police_curl = {
+
+    parent = law_gts_police
+
+    allowed_laws = {
+        law_gts_police
+    }
+
+    modifier = {
+        state_mortality_mult = 0.1
+        state_radicals_from_political_movements_mult = -0.1
+        interest_group_ig_gts_pol_str_mult = 0.1
+    }
+
+    possible = {
+        always = yes
+    }
+
+    would_sponsor = {
+        AND = {
+            exists = scope:approval
+            scope:approval > 0
+        }
+    }
+
+    ai_will_revoke = {
+        any_interest_group = {
+            is_in_government = yes
+            interest_group_has_socialist_ideology = yes
+        }
+    }
+
+    can_repeal = {
+        legitimacy >= legitimacy_to_repeal_amendment
+    }
+
+    amendment_activism_multiplier = 0.25
+}
+
+amendment_gts_police_gentle = {
+
+    parent = law_gts_police
+
+    allowed_laws = {
+        law_gts_police
+    }
+
+    modifier = {
+        state_mortality_mult = -0.1
+        state_radicals_from_political_movements_mult = -0.1
+        state_turmoil_effects_mult = -0.05
+    }
+
+    possible = {
+        always = yes
+    }
+
+    would_sponsor = {
+        AND = {
+            exists = scope:approval
+            scope:approval > 0
+        }
+    }
+
+    ai_will_revoke = {
+        any_interest_group = {
+            is_in_government = yes
+            interest_group_has_socialist_ideology = yes
+        }
+    }
+
+    can_repeal = {
+        legitimacy >= legitimacy_to_repeal_amendment
+    }
+
+    amendment_activism_multiplier = 0.25
+}

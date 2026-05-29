@@ -1,0 +1,72 @@
+gtsr_event_1 = {
+    video = "gfx/event_pictures/gtsr_event_1.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_2 = {
+    video = "gfx/event_pictures/gtsr_event_2.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_3 = {
+    video = "gfx/event_pictures/gtsr_event_3.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_4 = {
+    video = "gfx/event_pictures/gtsr_event_4.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_5 = {
+    video = "gfx/event_pictures/gtsr_event_5.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_6 = {
+    video = "gfx/event_pictures/gtsr_event_6.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_7 = {
+    video = "gfx/event_pictures/gtsr_event_7.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_8 = {
+    video = "gfx/event_pictures/gtsr_event_8.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_9 = {
+    video = "gfx/event_pictures/gtsr_event_9.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_10 = {
+    video = "gfx/event_pictures/gtsr_event_10.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_11 = {
+    video = "gfx/event_pictures/gtsr_event_11.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_12 = {
+    video = "gfx/event_pictures/gtsr_event_12.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_13 = {
+    video = "gfx/event_pictures/gtsr_event_13.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_14 = {
+    video = "gfx/event_pictures/gtsr_event_14.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_15 = {
+    video = "gfx/event_pictures/gtsr_event_15.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_16 = {
+    video = "gfx/event_pictures/gtsr_event_16.bk2"
+    audio = "event:/SFX/Events/unspecific/soldiers_breaking_protest"
+}
+gtsr_event_17 = {
+    video = "gfx/event_pictures/gtsr_event_17.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}
+gtsr_event_18 = {
+    video = "gfx/event_pictures/gtsr_event_18.bk2"
+    audio = "event:/SFX/Events/unspecific/destruction"
+}

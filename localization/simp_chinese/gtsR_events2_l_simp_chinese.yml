@@ -1,0 +1,82 @@
+﻿l_simp_chinese:
+ gtsr_industrial_events.1.t:"私藏人类"
+ gtsr_industrial_events.1.d:"我们意外发现位于[SCOPE.sState('triangle_gts_cloth_factory_accident_state').GetName]的巨娘衣物工厂中的巨娘们，经常以“测试鞋码”为由，将人类工人丢进鞋子里穿上。"
+ gtsr_industrial_events.1.f:"“好啦好啦，我放她们出来就是了。。。”\n\n被我们抓现行之后，那位巨娘只得承认，并脱下鞋子把里面的人类倒了出来，这些人显然已经被她穿在鞋子里很久了，不过大部分人都还活着。\n\n“就是测试鞋码啊，小人在鞋子里测量的比较清楚嘛~”\n\n虽然一眼借口，但是迫于这些巨娘的体型，工人们也不敢明面上抗议。"
+ gtsr_industrial_events.1.1:"这个方法挺好的啊，多多推广。"
+ gtsr_industrial_events.1.2:"骇人听闻，立刻叫停！"
+
+
+ gtsr_law_event.1.t:"巨娘足底政治"
+ gtsr_law_event.1.d:"在听闻我们的立法受挫后，巨大化到了万倍的巨娘，来到了[ROOT.GetCountry.GetCapital.GetName]的上空。"
+ gtsr_law_event.1.f:"“新闻上我都看到了哦，说什么立法不顺利什么的~”\n\n“那我就来把事情变得简单一点吧，不支持立法的人，统统会被我踩扁哦~”\n\n“啊...好像还有不少平民呢，嘛，这叫必要的牺牲对不对”"
+ gtsr_law_event.1.1:"让那些政客闭嘴吧，踩下去！"
+ gtsr_law_event.1.2:"不不不，不能伤及无辜啊！"
+
+ gtsr_law_event.2.t:"巨娘足底政治"
+ gtsr_law_event.2.d:"在听闻我们的立法受挫后，巨大化到了万倍的巨娘，来到了[ROOT.GetCountry.GetCapital.GetName]的上空。"
+ gtsr_law_event.2.f:"“新闻上我都看到了哦，说什么立法不顺利什么的~”\n\n“那我就来把事情变得简单一点吧，不支持立法的人，统统会被我踩扁哦~”\n\n“啊...好像还有不少平民呢，嘛，这叫必要的牺牲对不对”"
+ gtsr_law_event.2.1:"让那些政客闭嘴吧，踩下去！"
+ gtsr_law_event.2.2:"不不不，不能伤及无辜啊！"
+
+ gtsr_law_event.3.t:"巨娘足底政治"
+ gtsr_law_event.3.d:"在听闻我们的立法受挫后，巨大化到了万倍的巨娘，来到了[ROOT.GetCountry.GetCapital.GetName]的上空。"
+ gtsr_law_event.3.f:"“新闻上我都看到了哦，说什么立法不顺利什么的~”\n\n“那我就来把事情变得简单一点吧，不支持立法的人，统统会被我踩扁哦~”\n\n“啊...好像还有不少平民呢，嘛，这叫必要的牺牲对不对”"
+ gtsr_law_event.3.1:"让那些政客闭嘴吧，踩下去！"
+ gtsr_law_event.3.2:"不不不，不能伤及无辜啊！"
+
+ gtsr_law_event.4.t:"巨娘足底政治"
+ gtsr_law_event.4.d:"在听闻我们的立法受挫后，巨大化到了万倍的巨娘，来到了[ROOT.GetCountry.GetCapital.GetName]的上空。"
+ gtsr_law_event.4.f:"“新闻上我都看到了哦，说什么立法不顺利什么的~”\n\n“那我就来把事情变得简单一点吧，不支持立法的人，统统会被我踩扁哦~”\n\n“啊...好像还有不少平民呢，嘛，这叫必要的牺牲对不对”"
+ gtsr_law_event.4.1:"让那些政客闭嘴吧，踩下去！"
+ gtsr_law_event.4.2:"不不不，不能伤及无辜啊！"
+
+ gtsr_law_event.5.t:"巨娘足底政治"
+ gtsr_law_event.5.d:"在听闻我们的立法受挫后，巨大化到了万倍的巨娘，来到了[ROOT.GetCountry.GetCapital.GetName]的上空。"
+ gtsr_law_event.5.f:"“新闻上我都看到了哦，说什么立法不顺利什么的~”\n\n“那我就来把事情变得简单一点吧，不支持立法的人，统统会被我踩扁哦~”\n\n“啊...好像还有不少平民呢，嘛，这叫必要的牺牲对不对”"
+ gtsr_law_event.5.1:"让那些政客闭嘴吧，踩下去！"
+ gtsr_law_event.5.2:"不不不，不能伤及无辜啊！"
+
+ gtsr_law_event.6.t:"巨娘足底政治"
+ gtsr_law_event.6.d:"在听闻我们的立法受挫后，巨大化到了万倍的巨娘，来到了[ROOT.GetCountry.GetCapital.GetName]的上空。"
+ gtsr_law_event.6.f:"“新闻上我都看到了哦，说什么立法不顺利什么的~”\n\n“那我就来把事情变得简单一点吧，不支持立法的人，统统会被我踩扁哦~”\n\n“啊...好像还有不少平民呢，嘛，这叫必要的牺牲对不对”"
+ gtsr_law_event.6.1:"让那些政客闭嘴吧，踩下去！"
+ gtsr_law_event.6.2:"不不不，不能伤及无辜啊！"
+
+ gtsr_law_event.7.t:"巨娘足底政治"
+ gtsr_law_event.7.d:"在听闻我们的立法受挫后，巨大化到了万倍的巨娘，来到了[ROOT.GetCountry.GetCapital.GetName]的上空。"
+ gtsr_law_event.7.f:"“新闻上我都看到了哦，说什么立法不顺利什么的~”\n\n“那我就来把事情变得简单一点吧，不支持立法的人，统统会被我踩扁哦~”\n\n“啊...好像还有不少平民呢，嘛，这叫必要的牺牲对不对”"
+ gtsr_law_event.7.1:"让那些政客闭嘴吧，踩下去！"
+ gtsr_law_event.7.2:"不不不，不能伤及无辜啊！"
+
+ gtsr_law_event.8.t:"巨娘足底政治"
+ gtsr_law_event.8.d:"在听闻我们的立法受挫后，巨大化到了万倍的巨娘，来到了[ROOT.GetCountry.GetCapital.GetName]的上空。"
+ gtsr_law_event.8.f:"“新闻上我都看到了哦，说什么立法不顺利什么的~”\n\n“那我就来把事情变得简单一点吧，不支持立法的人，统统会被我踩扁哦~”\n\n“啊...好像还有不少平民呢，嘛，这叫必要的牺牲对不对”"
+ gtsr_law_event.8.1:"让那些政客闭嘴吧，踩下去！"
+ gtsr_law_event.8.2:"不不不，不能伤及无辜啊！"
+
+ gtsr_social_events.1.t:"巨娘警察的私刑"
+ gtsr_social_events.1.d:"在我们的巨娘加入警察队伍之后，[SCOPE.sState('gts_violence_state').GetName]等地出现了大量巨娘警察肆意虐待人类的举报。"
+ gtsr_social_events.1.f:"“衣着不符合审美”，“走路速度过快”...甚至“见到警官没有下跪”等理由，都成了她们肆意处刑人类的理由。\n\n许多居民被巡逻的巨娘警察当街踩扁。"
+
+ gtsr_diplomatic.1.t:"急不可待的巨娘"
+ gtsr_diplomatic.1.d:"[SCOPE.sCountry('rival_scope').GetName]向我们抗议，一名我方巨娘越过边境，在他们的城市里大肆破坏。"
+ gtsr_diplomatic.1.f:"“反正迟早都要被我踩扁的，早几天又怎么样呢？”那位巨娘临走前这么说。\n\n对方要求我方给出解释。"
+ gtsr_diplomatic.1.a:"我觉得她说的对"
+ gtsr_diplomatic.1.b:"这就去让她赔礼道歉"
+
+ gtsr_social_events.2.t:"巨足的“正义执行”"
+ gtsr_social_events.2.d:"[SCOPE.sState('culture_state').GetName]的[SCOPE.sCulture('state_minority_culture').GetName]人聚居区在近期频繁遭到某些本地的[concept_gts]破坏。"
+ gtsr_social_events.2.f:"“她们口口声称是维护社会秩序”一位幸存者向报社控诉，“说是替社会消灭害虫，虽然我们确实不受待见，可是我们也是有人权的人类啊！”"
+ gtsr_social_events.2.a:"姑娘们，下次记得别留幸存者了"
+ gtsr_social_events.2.b:"我们会管管那些野蛮的巨娘的"
+
+ gtsr_tech_events.1.t:"最高的巨娘"
+ gtsr_tech_events.1.d:"今天，我们的第一位舰娘完成了舾装，但是出了点意外"
+ gtsr_tech_events.1.f:"第一次巨大化到如此程度的舰娘，显然没有看见脚下的城市，虽然岸防部队拼命朝她开火，试图引起她注意，但是在她反应过来之前，还是对[SCOPE.sState('warshipgirls_victim').GetName]的城市造成了相当大的破坏"
+ gtsr_tech_events.1.a:"对外宣称这是用废弃城市做的演习"
+ gtsr_tech_events.1.b:"给我把她的指挥官丢进她的鞋子里关禁闭去！"
+
+ gtsr_diplomatic.2.t:"城市毁灭者"
+ gtsr_diplomatic.2.d:"在[SCOPE.sWar('gts_event_war').GetName]中，我方巨娘在攻入敌军城市之后，特地使用极巨化技术，以十万倍大小降临在敌人占据的城市里"
+ gtsr_diplomatic.2.f:"虽然这种极巨化仅能维持几分钟，但是造成的恐怖破坏，早已被各家报社传了出去，城市中残存的巨大脚印的照片，无疑在我们的敌人内部造成了巨大的恐慌"
+ gtsr_diplomatic.2.a:"幸好她是我们这边的"

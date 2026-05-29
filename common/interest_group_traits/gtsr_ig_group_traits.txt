@@ -1,0 +1,27 @@
+ig_trait_gts_bad1 = {
+    icon = "gfx/interface/icons/ig_trait_icons/ig_gts_bad1.dds"
+    max_approval = unhappy
+
+    modifier = {
+        state_mortality_mult = 0.1
+    }
+}
+ig_trait_gts_good1 = {
+    icon = "gfx/interface/icons/ig_trait_icons/engines_of_progress.dds"
+    max_approval = happy
+
+    modifier = {
+        country_minting_mult = 1
+        country_expenses_add = -10000
+        #building_cash_reserves_mult = 2
+    }
+}
+ig_trait_gts_good2 = {
+    icon = "gfx/interface/icons/ig_trait_icons/job_creators.dds"
+    max_approval = loyal
+
+    modifier = {
+        building_construction_sector_throughput_add = 0.2
+        state_trade_advantage_mult = 0.2
+    }
+}

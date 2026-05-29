@@ -1,0 +1,20 @@
+gtsr_start = {
+    is_shown = { #是否显示
+        NOT = { has_variable = gtsr_country }
+    }
+
+    possible = { #是否可选
+        NOT = { has_variable = gtsr_country }
+    }
+
+    when_taken = { #选择效果
+        set_variable = {
+            name = gtsr_country
+            value = yes
+        }
+        trigger_event = { id = gtsr_main.1 popup = yes }
+    }
+    ai_chance = {
+        base = 0
+    }
+}

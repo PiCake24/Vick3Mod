@@ -1,0 +1,40 @@
+pm_gts_buildings = {
+    texture = "gfx/interface/icons/production_method_icons/gts_maid.dds"
+
+    unlocking_technologies = {
+        gts_growth_tech1
+    }
+
+    country_modifiers = {
+        workforce_scaled = {
+            country_construction_add = 15
+        }
+    }
+
+    building_modifiers = {
+        workforce_scaled = {
+            goods_input_gts_socks_add = 10
+            goods_input_gts_shoes_add = 10
+            goods_input_gts_cloth_add = 10
+            goods_input_wood_add = 10
+            goods_input_iron_add = 15
+            goods_input_tools_add = 10
+        }
+
+        level_scaled = {
+            building_employment_gts_servent_add = 200
+            building_employment_gts_maid_add = 200
+            building_employment_laborers_add = 600
+        }
+        unscaled = {
+            building_laborers_mortality_mult = 0.3
+        }
+    }
+
+    state_modifiers = {
+        workforce_scaled = {
+            state_construction_mult = 0.01
+        }
+    }
+
+}

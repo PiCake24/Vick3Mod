@@ -1,0 +1,32 @@
+gts_growth_tech1 = {
+    era = era_1
+    texture = "gfx/interface/icons/pops_icons/gts_servent.dds"
+    category = production
+    can_research = no
+
+    modifier = {
+
+    }
+
+    ai_weight = {
+        value = 0
+    }
+
+}
+
+gts_growth_tech2 = {
+    era = era_2
+    texture = "gfx/interface/icons/pops_icons/gts_maid.dds"
+    category = production
+    can_research = yes
+
+    modifier = {
+
+    }
+    unlocking_technologies = {
+        gts_growth_tech1
+    }
+    ai_weight = {
+        value = 0
+    }
+}

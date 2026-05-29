@@ -1,0 +1,13 @@
+﻿victorian_century_ai_enhancement_rules = {
+	default = enable_ordinary_victorian_century_ai_enhancement
+
+	enable_ordinary_victorian_century_ai_enhancement = {
+	}
+
+	enable_advanced_victorian_century_ai_enhancement = {
+	}
+
+	disable_victorian_century_ai_enhancement = {
+	}
+}
+

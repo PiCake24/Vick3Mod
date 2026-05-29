@@ -1,0 +1,44 @@
+gts_liquid = {
+    texture = "gfx/interface/icons/goods_icons/gts_liquid.dds"
+    cost = 50
+    category = staple
+    #tradeable = no
+
+    obsession_chance = 5.0
+    prestige_factor = 1
+    convoy_cost_multiplier = 0.8
+    consumption_tax_cost = 200
+}
+gts_shoes = {
+    texture = "gfx/interface/icons/goods_icons/gts_shoes.dds"
+    cost = 80
+    category = luxury
+    #tradeable = no
+
+    obsession_chance = 5.0
+    prestige_factor = 1
+    convoy_cost_multiplier = 2
+    consumption_tax_cost = 200
+}
+gts_socks = {
+    texture = "gfx/interface/icons/goods_icons/gts_socks.dds"
+    cost = 80
+    category = luxury
+    #tradeable = no
+
+    obsession_chance = 5.0
+    prestige_factor = 1
+    convoy_cost_multiplier = 2
+    consumption_tax_cost = 200
+}
+gts_cloth = {
+    texture = "gfx/interface/icons/goods_icons/gts_cloth.dds"
+    cost = 100
+    category = luxury
+    #tradeable = no
+
+    obsession_chance = 5.0
+    prestige_factor = 1
+    convoy_cost_multiplier = 3
+    consumption_tax_cost = 200
+}

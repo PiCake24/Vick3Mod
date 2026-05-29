@@ -1,0 +1,71 @@
+﻿MILITARY_FORMATIONS = {
+	c:GTS1 = {
+		create_military_formation = {
+			type = army
+			hq_region = sr:region_western_europe
+			name = Home_Army
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_line_infantry
+				state_region = s:STATE_ULSTER
+				count = 7
+			}
+
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_lancers
+				state_region = s:STATE_ULSTER
+				count = 1
+			}
+
+			combat_unit = {
+				type = unit_type:combat_unit_type_mobile_artillery
+				state_region = s:STATE_CONNAUGHT
+				count = 2
+			}
+
+			save_scope_as = gts1_home_army_army
+		}
+		create_character = {
+			# Hanfere ibn Aydahis
+			first_name = "Aplog"
+			last_name = "Sinsal"
+			historical = yes
+			culture = cu:gts_cult1
+			religion = rel:gts_religion1
+			#female = yes
+			is_general = yes
+			age = 22 # complete guesswork
+			interest_group = ig_landowners
+			ideology = ideology_moderate
+			traits = {
+				direct
+			}
+			save_scope_as = gts_aplog
+		}
+		scope:gts_aplog = {
+			transfer_to_formation = scope:gts1_home_army_army
+		}
+		create_military_formation = {
+			type = fleet
+			hq_region = sr:region_western_europe
+			name = Escadre_du_Nord # Somewhat anachronistic formation
+
+			ship = {
+				type = ship_type:ship_type_ship_of_the_line
+				count = 1
+			}
+
+			ship = {
+				type = ship_type:ship_type_frigate
+				count = 4
+			}
+
+		}
+		activate_production_method = {
+			building_type = building_barrack
+			production_method = pm_general_training
+		}
+	}
+
+}

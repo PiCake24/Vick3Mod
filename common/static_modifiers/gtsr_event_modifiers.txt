@@ -1,0 +1,49 @@
+modifier_stomp_excution = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+    character_popularity_add = -1
+}
+gts_transformation_cooldown = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+    building_group_bg_gts_transformation_employee_mult = -10
+}
+modifier_gtsr_industrial_events_1a = { #扩大生产
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    building_gts_cloth_factory_throughput_add = 0.15
+}
+gts_cursh_potlic	= {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+    country_law_enactment_time_mult = 0.10
+    country_law_enactment_success_add = 0.4
+    country_law_enactment_stall_add = -0.4
+    country_law_enactment_max_setbacks_add =
+}
+
+modifier_gtsr_industrial_events_1a = { #扩大生产
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    building_gts_cloth_factory_throughput_add = 0.15
+}
+
+defunded_gts_police = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+    interest_group_approval_add = 2
+}
+
+gts_border_sovereignity_questioned = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+    country_prestige_mult = -0.2
+    unit_morale_loss_mult = 0.3
+}
+
+gts_bad_behave_supressed = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+    country_authority_mult = -0.05
+}
+the_navy_of_warshipgirls = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+    country_prestige_from_navy_power_projection_mult = 0.2
+    country_prestige_mult = 0.2
+}
+gts_instrument_of_fear = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_positive.dds
+    unit_morale_damage_mult = 0.3
+}

@@ -1,0 +1,37 @@
+
+
+gts_party = {
+    color = { 100 60 198 }
+    name = {
+        desc = gts_party_name
+    }
+
+    icon = {
+        default = "/gfx/interface/icons/political_parties/revolutionary.dds"
+    }
+
+    valid_for_country = {
+        always = yes
+    }
+    available_for_interest_group = {
+        owner = {
+            country_has_voting_franchise = yes
+        }
+        is_interest_group_type = ig_gts
+    }
+
+    join_weight = {
+        value = 0
+
+        if = {
+            limit = {
+                is_interest_group_type = ig_gts
+            }
+
+            add = {
+                value = 10000
+                desc = "base_value"
+            }
+        }
+    }
+}

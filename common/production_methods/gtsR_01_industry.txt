@@ -1,0 +1,286 @@
+pm_gts_residential1 = {
+    texture = "gfx/interface/icons/production_method_icons/gts_residential1.dds"
+
+    unlocking_technologies = {
+        gts_growth_tech1
+    }
+    building_modifiers = {
+        workforce_scaled = {
+            # input goods
+            goods_input_wood_add = 5 # 150
+            goods_input_grain_add = 10 # 600
+            # output goods
+
+            goods_output_gts_liquid_add = 10
+            goods_output_clothes_add = 10 # 7.5
+            goods_output_furniture_add = 10 # 7.5
+            goods_output_tools_add = 10 # 7.5
+            goods_output_fertilizer_add = 10
+        }
+
+        level_scaled = {
+            building_employment_gts_servent_add = 400
+            building_employment_gts_maid_add = 200
+            #building_employment_gts_leader_add = 200
+            building_employment_laborers_add = 1000
+        }
+        unscaled = {
+            building_laborers_mortality_mult = 0.5
+            #building_gts_leader_standard_of_living_add = 20
+            building_gts_maid_standard_of_living_add = 10
+            building_gts_servent_standard_of_living_add = 5
+        }
+    }
+    ai_weight = 0
+}
+
+pm_base_gts_cloth_method1 = {
+    texture = "gfx/interface/icons/production_method_icons/handsewn_clothes.dds"
+
+    building_modifiers = {
+        workforce_scaled = {
+            # input goods
+            goods_input_fabric_add = 40		# x20 =  800
+            goods_input_dye_add = 10
+            goods_input_clothes_add = 20
+
+            # output goods
+            goods_output_gts_cloth_add = 30
+            goods_output_gts_socks_add = 30
+            goods_output_gts_shoes_add = 30
+        }
+
+        level_scaled = {
+            # profit = 550 (6.3)
+            building_employment_shopkeepers_add = 500
+            building_employment_laborers_add = 1000
+            building_employment_gts_servent_add = 800
+            building_employment_gts_maid_add = 200
+        }
+    }
+}
+pm_base_gts_cloth_method2 = {
+    texture = "gfx/interface/icons/production_method_icons/sewing_machines.dds"
+    unlocking_technologies = {
+        mechanized_workshops
+    }
+    building_modifiers = {
+        workforce_scaled = {
+            # input goods
+            goods_input_fabric_add = 50		# x20 =  800
+            goods_input_dye_add = 15
+            goods_input_clothes_add = 25
+            goods_input_tools_add = 10
+
+            # output goods
+            goods_output_gts_cloth_add = 45
+            goods_output_gts_socks_add = 45
+            goods_output_gts_shoes_add = 45
+        }
+
+        level_scaled = {
+            # profit = 550 (6.3)
+            building_employment_shopkeepers_add = 500
+            building_employment_laborers_add = 500
+            building_employment_machinists_add = 500
+            building_employment_gts_servent_add = 600
+            building_employment_gts_maid_add = 400
+        }
+    }
+}
+pm_base_gts_cloth_method3 = {
+    texture = "gfx/interface/icons/production_method_icons/electric_sewing_machines.dds"
+    unlocking_technologies = {
+        electrical_capacitors
+    }
+    building_modifiers = {
+        workforce_scaled = {
+            # input goods
+            goods_input_fabric_add = 60		# x20 =  800
+            goods_input_dye_add = 20
+            goods_input_clothes_add = 30
+            goods_input_tools_add = 10
+            goods_input_electricity_add = 15
+
+            # output goods
+            goods_output_gts_cloth_add = 70
+            goods_output_gts_socks_add = 70
+            goods_output_gts_shoes_add = 70
+        }
+
+        level_scaled = {
+            # profit = 550 (6.3)
+            building_employment_shopkeepers_add = 500
+            building_employment_laborers_add = 500
+            building_employment_machinists_add = 200
+            building_employment_engineers_add = 300
+            building_employment_gts_servent_add = 500
+            building_employment_gts_maid_add = 500
+        }
+    }
+}
+pm_secondary_gts_cloth_method1 = {
+    texture = "gfx/interface/icons/production_method_icons/no_luxury_clothes.dds"
+
+    building_modifiers = {
+
+    }
+}
+pm_secondary_gts_cloth_method2 = {
+    texture = "gfx/interface/icons/production_method_icons/craftsman_sewing.dds"
+
+    building_modifiers = {
+        workforce_scaled = {
+            goods_output_gts_cloth_add = 30
+            goods_output_gts_socks_add = -15
+            goods_output_gts_shoes_add = -15
+        }
+
+    }
+}
+pm_secondary_gts_cloth_method3 = {
+    texture = "gfx/interface/icons/production_method_icons/elastics.dds"
+
+    building_modifiers = {
+        workforce_scaled = {
+            goods_output_gts_cloth_add = -15
+            goods_output_gts_socks_add = 30
+            goods_output_gts_shoes_add = -15
+        }
+
+    }
+}
+pm_secondary_gts_cloth_method4 = {
+    texture = "gfx/interface/icons/production_method_icons/luxury_furniture.dds"
+
+    building_modifiers = {
+        workforce_scaled = {
+            goods_output_gts_cloth_add = -15
+            goods_output_gts_socks_add = -15
+            goods_output_gts_shoes_add = 30
+        }
+
+    }
+}
+pm_gts_cloth_automatic1 = {
+    texture = "gfx/interface/icons/production_method_icons/no_automation.dds"
+
+    building_modifiers = {
+
+    }
+}
+pm_gts_cloth_automatic2 = {
+    texture = "gfx/interface/icons/production_method_icons/pm_gts_cloth_automatic2.dds"
+    unlocking_technologies = {
+        gts_growth_tech2
+    }
+    building_modifiers = {
+        workforce_scaled = {
+            # input goods
+            goods_input_tools_add = 5
+            goods_output_gts_liquid_add = 30# x40 =  200
+        }
+
+        level_scaled = {
+            # profit = -200 (break-even when annual laborer wage > 6.9)
+            building_employment_gts_servent_add = -100
+            building_employment_laborers_add = -200
+
+        }
+        unscaled = {
+            building_laborers_mortality_mult = 0.5
+        }
+    }
+}
+pm_gts_cloth_automatic3 = {
+    texture = "gfx/interface/icons/production_method_icons/pm_gts_cloth_automatic3.dds"
+    unlocking_technologies = {
+        gts_growth_tech2
+    }
+    building_modifiers = {
+        workforce_scaled = {
+            # input goods
+            goods_output_gts_cloth_add = -5
+            goods_output_gts_socks_add = -5
+            goods_output_gts_shoes_add = -5
+            goods_output_gts_liquid_add = 50# x40 =  200
+        }
+
+        level_scaled = {
+            # profit = -200 (break-even when annual laborer wage > 6.9)
+            building_employment_gts_servent_add = -100
+            building_employment_laborers_add = -200
+
+        }
+        unscaled = {
+            building_laborers_mortality_mult = 0.2
+        }
+    }
+}
+pm_gts_sift1 = {
+    texture = "gfx/interface/icons/production_method_icons/no_luxury_furniture.dds"
+}
+pm_gts_lily = {
+    texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+    unlocking_laws = {
+        #law_wsg_ruler
+        #law_wsg_only
+    }
+    building_modifiers = {
+        level_scaled = {
+            building_employment_gts_servent_add = 100
+            #building_wsg_spawn = 100
+        }
+
+    }
+    state_modifiers = {
+        workforce_scaled = {
+            state_gts_birth_rate_mult = 0.02
+        }
+    }
+}
+
+pm_growth_drug = {
+    texture = "gfx/interface/icons/production_method_icons/gts_residential1.dds"
+    unlocking_laws = {
+        #law_wsg_ruler
+        #law_wsg_only
+    }
+    building_modifiers = {
+        level_scaled = {
+            building_employment_gts_cache_add = 200
+            # 1000 * 0.1
+            building_gts_transform = 200
+        }
+        unscaled = {
+            building_minimum_wage_mult = 5
+        }
+    }
+}
+pm_gts_summon = {
+    texture = "gfx/interface/icons/production_method_icons/professional_bureaucrats.dds"
+    unlocking_laws = {
+        #law_wsg_ruler
+        #law_wsg_only
+    }
+    ai_weight = 1000
+    unlocking_technologies = {
+        #identification_documents
+    }
+
+    country_modifiers = {
+        level_scaled = {
+            country_bureaucracy_add = -5
+        }
+    }
+    state_modifiers = {
+        workforce_scaled = {
+            state_gts_discover_rate = 0.005
+        }
+    }
+    building_modifiers = {
+        level_scaled = {
+            building_employment_laborers_add = 100
+        }
+    }
+}
