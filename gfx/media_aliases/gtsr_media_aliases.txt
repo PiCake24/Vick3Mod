@@ -1,4 +1,4 @@
-gtsr_event_1 = {
+﻿gtsr_event_1 = {
     video = "gfx/event_pictures/gtsr_event_1.bk2"
     audio = "event:/SFX/Events/unspecific/destruction"
 }

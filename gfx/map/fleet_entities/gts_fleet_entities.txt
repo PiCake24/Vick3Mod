@@ -1,4 +1,4 @@
-ship_type_gts_warshipgirls = {
+﻿ship_type_gts_warshipgirls = {
     ship_type = ship_type_gts_warshipgirls
     weapon_type = turret
     hull_type = steel
