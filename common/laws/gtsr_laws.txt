@@ -463,6 +463,7 @@ law_gts_research = {#人类实验品
 
     institution = institution_schools
     institution_modifier = {
+        state_literacy_growth_add = 0.001
         interest_group_ig_gts_pol_str_mult = 0.1
         state_education_access_add = 0.15
         state_assimilation_mult = 0.15
@@ -616,7 +617,7 @@ law_gts_health = {
     institution_modifier = {
         state_mortality_mult = -0.08
         state_birth_rate_mult = 0.08
-        state_pollution_reduction_health_mult = -0.1
+        state_pollution_reduction_health_mult = -0.2
         state_standard_of_living_add = 1
 
     }

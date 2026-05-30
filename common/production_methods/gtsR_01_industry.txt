@@ -23,12 +23,18 @@
             building_employment_gts_maid_add = 200
             #building_employment_gts_leader_add = 200
             building_employment_laborers_add = 1000
-        }
+            }
         unscaled = {
+            building_minimum_wage_mult = 2
             building_laborers_mortality_mult = 0.5
-            #building_gts_leader_standard_of_living_add = 20
+            building_gts_leader_standard_of_living_add = 10
             building_gts_maid_standard_of_living_add = 10
             building_gts_servent_standard_of_living_add = 5
+        }
+    }
+    state_modifiers = {
+        workforce_scaled = {
+            state_infrastructure_add = 1
         }
     }
 }

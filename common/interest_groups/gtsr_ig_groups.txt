@@ -12,6 +12,7 @@
     character_ideologies = {
         ideology_gtsisum_cruel
         ideology_gtsisum_gentle
+        #ideology_jingoist
     }
 
     enable = {
@@ -58,7 +59,7 @@
                 limit = {
                     pop_is_gts_trigger = yes
                 }
-                value = 300
+                value = 1000
             }
 
         }
