@@ -1,4 +1,4 @@
-namespace = gtsr
+﻿namespace = gtsr
 namespace = gtsr_main
 
 gtsr.1 = {

@@ -1,4 +1,4 @@
-prestige_good_gts_cloths = {
+﻿prestige_good_gts_cloths = {
     base_good = gts_cloth
     prestige_bonus = 0.1
     texture = "gfx/interface/icons/goods_icons/gts_cloth1.dds"

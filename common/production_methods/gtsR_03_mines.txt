@@ -1,4 +1,4 @@
-pm_dynamite_gts_building_coal_mine = {
+﻿pm_dynamite_gts_building_coal_mine = {
     texture = "gfx/interface/icons/production_method_icons/gts_residential1.dds"
 
     unlocking_technologies = {

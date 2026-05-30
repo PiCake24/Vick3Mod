@@ -1,4 +1,4 @@
-ship_mod_gts_warshipgirls_armor_light = {
+﻿ship_mod_gts_warshipgirls_armor_light = {
     type = ship_mod_slot_gts_cloth
     icon = "gfx/interface/icons/military_icons/navy_icons/ship_designer_icons/ship_designer_armor_low.dds"
     clicksound = "event:/SFX/UI/ShipDesigner/shipdesigner_modification_armor_light"

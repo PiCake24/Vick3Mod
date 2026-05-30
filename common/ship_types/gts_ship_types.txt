@@ -1,6 +1,6 @@
-ship_type_gts_warshipgirls = {
+﻿ship_type_gts_warshipgirls = {
 
-    ship_group = ship_group_gts_shipgirls
+    ship_group = ship_group_capital_ships
 
     modification_construction_cost = 150
 

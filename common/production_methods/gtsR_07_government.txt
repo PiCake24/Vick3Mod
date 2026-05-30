@@ -1,4 +1,4 @@
-pm_gts_philosophy_department = {
+﻿pm_gts_philosophy_department = {
     texture = "gfx/interface/icons/production_method_icons/gts_maid.dds"
 
     unlocking_technologies = {
@@ -41,6 +41,19 @@ pm_gts_academia = {
     }
 
     building_modifiers = {
+        level_scaled = {
+            building_employment_gts_leader_add = 50
+        }
+    }
+}
+pm_gts_gov = {
+	texture = "gfx/interface/icons/production_method_icons/gts_ownership.dds"
+	
+	unlocking_technologies = {
+        gts_growth_tech1
+    }
+	
+	building_modifiers = {
         level_scaled = {
             building_employment_gts_leader_add = 50
         }

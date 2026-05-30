@@ -1,4 +1,4 @@
-gts_servent = {
+﻿gts_servent = {
     texture = "gfx/interface/icons/pops_icons/gts_servent.dds"
     color = hsv{ 0.54 0.58 0.82 }
     working_adult_ratio = 0.5 #劳动力比例

@@ -1,4 +1,4 @@
-bg_gts_transformation = {
+﻿bg_gts_transformation = {
     parent_group = bg_public_infrastructure
     fired_pops_become_radical = no
 }

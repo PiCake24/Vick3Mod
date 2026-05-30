@@ -1,4 +1,4 @@
-gts_growth_tech1 = {
+﻿gts_growth_tech1 = {
     era = era_1
     texture = "gfx/interface/icons/pops_icons/gts_servent.dds"
     category = production

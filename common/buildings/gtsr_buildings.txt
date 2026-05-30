@@ -1,4 +1,4 @@
-building_gts_residential_area = {
+﻿building_gts_residential_area = {
     building_group = bg_light_industry
     icon = "gfx/interface/icons/building_icons/building_gts_residential_area.dds"
     city_type = city

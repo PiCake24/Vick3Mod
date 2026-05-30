@@ -1,4 +1,4 @@
-gts_cult1= {
+﻿gts_cult1= {
     color= hsv{ 0.45 0.58 0.54 }
     religion = gts_religion1
     heritage = heritage_gts

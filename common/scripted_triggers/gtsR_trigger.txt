@@ -1,4 +1,4 @@
-moe_clothes_gts_cult1_trigger = {
+﻿moe_clothes_gts_cult1_trigger = {
     exists = scope:character
     scope:character = {
         culture = cu:gts_cult1

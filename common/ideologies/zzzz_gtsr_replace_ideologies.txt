@@ -1,4 +1,4 @@
-REPLACE:ideology_paternalistic = {
+﻿REPLACE:ideology_paternalistic = {
     icon = "gfx/interface/icons/ideology_icons/paternalistic.dds"
     lawgroup_gts_rights = {
         law_gts_discriminated= disapprove

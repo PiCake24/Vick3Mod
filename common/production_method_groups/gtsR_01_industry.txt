@@ -1,4 +1,4 @@
-#巨娘居住区
+﻿#巨娘居住区
 pmg_base_building_gts_residential_area = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
     production_methods = {

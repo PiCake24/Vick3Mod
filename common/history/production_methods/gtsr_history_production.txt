@@ -1,4 +1,4 @@
-PRODUCTION_METHODS = {
+﻿PRODUCTION_METHODS = {
     c:GTS1 ?= {
         activate_production_method = {
             building_type = building_urban_center

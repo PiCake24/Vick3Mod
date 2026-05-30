@@ -1,4 +1,4 @@
-INJECT:pmg_explosives_building_coal_mine = {
+﻿INJECT:pmg_explosives_building_coal_mine = {
     production_methods = {
         pm_dynamite_gts_building_coal_mine
     }

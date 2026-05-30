@@ -1,4 +1,4 @@
-amendment_gts_police_curl = {
+﻿amendment_gts_police_curl = {
 
     parent = law_gts_police
 

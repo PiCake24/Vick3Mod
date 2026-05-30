@@ -1,4 +1,4 @@
-ig_trait_gts_bad1 = {
+﻿ig_trait_gts_bad1 = {
     icon = "gfx/interface/icons/ig_trait_icons/ig_gts_bad1.dds"
     max_approval = unhappy
 

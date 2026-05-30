@@ -1,4 +1,4 @@
-lawgroup_gts_rights = {
+﻿lawgroup_gts_rights = {
     law_group_category = other
     enactment_approval_mult = 1.5
     ideological_opinion_impact = 1.0

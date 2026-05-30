@@ -1,4 +1,4 @@
-gtsr_culture_convert_pulse_effect = {
+﻿gtsr_culture_convert_pulse_effect = {
     if = {
         limit = {
             #OR = {

@@ -75,3 +75,4 @@ state_gts_leader_standard_of_living_add_desc: "Gives a buff or penalty to the [c
 building_gts_residential_area: "Giant Residence Area"
 building_gts_cloth_factory: "Giant Clothes Factory"
 building_gts_transformation: "Gigantic facility"
+pm_gts_gov: "Giant Administration"

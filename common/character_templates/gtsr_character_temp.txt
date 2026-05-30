@@ -1,4 +1,4 @@
-GTSR_Pamela = { #舰娘运输公司-企业
+﻿GTSR_Pamela = { #舰娘运输公司-企业
     female = yes #女性
     first_name = "Pamela"
     last_name = "Bischa"

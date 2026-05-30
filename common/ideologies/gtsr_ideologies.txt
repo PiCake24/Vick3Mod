@@ -1,4 +1,4 @@
-ideology_gtsist1 = {
+﻿ideology_gtsist1 = {
     icon = "gfx/interface/icons/ideology_icons/gtsist.dds"
 
 

@@ -1,4 +1,4 @@
-gts_maid = {
+﻿gts_maid = {
     texture = "gfx/interface/icons/pops_icons/gts_maid.dds"
     color = hsv{ 0.12 0.51 0.36 }
     start_quality_of_life = 10

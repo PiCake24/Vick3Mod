@@ -1,4 +1,4 @@
-GLOBAL = {
+﻿GLOBAL = {
     set_global_variable = { name =culture_gts1 value = cu:gts_cult1 }
     #cu:gts_cult1 = {
     #    set_fervor = 100

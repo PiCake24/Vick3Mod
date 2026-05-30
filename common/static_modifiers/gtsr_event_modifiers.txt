@@ -1,4 +1,4 @@
-modifier_stomp_excution = {
+﻿modifier_stomp_excution = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
     character_popularity_add = -1
 }
@@ -10,19 +10,13 @@ modifier_gtsr_industrial_events_1a = { #扩大生产
     icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
     building_gts_cloth_factory_throughput_add = 0.15
 }
-gts_cursh_potlic	= {
+gts_cursh_potlic = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
     country_law_enactment_time_mult = 0.10
     country_law_enactment_success_add = 0.4
     country_law_enactment_stall_add = -0.4
-    country_law_enactment_max_setbacks_add =
+    country_law_enactment_max_setbacks_add = 1
 }
-
-modifier_gtsr_industrial_events_1a = { #扩大生产
-    icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
-    building_gts_cloth_factory_throughput_add = 0.15
-}
-
 defunded_gts_police = {
     icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
     interest_group_approval_add = 2

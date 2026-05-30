@@ -1,4 +1,4 @@
-ideology_gtsisum_cruel = {
+﻿ideology_gtsisum_cruel = {
     icon = "gfx/interface/icons/ideology_icons/ideology_leader/gtsisum_cruel.dds"
 
     character_ideology = yes

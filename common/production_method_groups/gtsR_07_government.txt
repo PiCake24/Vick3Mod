@@ -1,4 +1,4 @@
-INJECT:pmg_base_building_university = {
+﻿INJECT:pmg_base_building_university = {
     texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
     production_methods = {
         pm_gts_philosophy_department
@@ -12,4 +12,12 @@ INJECT:pmg_university_academia = {
     production_methods = {
         pm_gts_academia
     }
+}
+INJECT:pmg_government_administration_religious_administration = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_gts_gov
+	}
 }

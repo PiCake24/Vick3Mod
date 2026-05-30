@@ -1,4 +1,4 @@
-on_monthly_pulse_country = {
+﻿on_monthly_pulse_country = {
     random_events = {
         chance_to_happen = 40
         50 = gtsr_industrial_events.1

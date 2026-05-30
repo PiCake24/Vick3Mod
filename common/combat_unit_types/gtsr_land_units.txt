@@ -1,4 +1,4 @@
-combat_unit_type_gts_100m = {
+﻿combat_unit_type_gts_100m = {
     group = combat_unit_group_infantry
     max_manpower = 1000
 

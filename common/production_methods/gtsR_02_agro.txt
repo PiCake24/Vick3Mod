@@ -1,4 +1,4 @@
-pm_gts_enriching_farming = {
+﻿pm_gts_enriching_farming = {
     texture = "gfx/interface/icons/production_method_icons/gts_farmers.dds"
 
     unlocking_technologies = {
@@ -25,7 +25,6 @@ pm_gts_enriching_farming = {
             building_farmers_mortality_mult = 0.15
         }
     }
-    ai_weight = 0
 }
 
 pm_gts_orchards = {
@@ -41,7 +40,6 @@ pm_gts_orchards = {
             goods_output_liquor_add = 10
         }
     }
-    ai_weight = 0
 }
 
 pm_gts_threshers = {
@@ -74,5 +72,4 @@ pm_gts_threshers = {
             building_farmers_mortality_mult = 0.15
         }
     }
-    ai_weight = 0
 }

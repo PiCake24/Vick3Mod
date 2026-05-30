@@ -1,4 +1,4 @@
-stomp_to_death = {
+﻿stomp_to_death = {
     clicksound = "event:/SFX/DLC/1.3_ip1/UI/exile_character"
 
     potential = {

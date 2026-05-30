@@ -1,4 +1,4 @@
-ship_mod_slot_gts_cloth = {
+﻿ship_mod_slot_gts_cloth = {
     icon = "gfx/interface/icons/military_icons/navy_icons/armor_navy.dds"
 }
 

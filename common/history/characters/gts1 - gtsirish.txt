@@ -1,4 +1,4 @@
-CHARACTERS = {
+﻿CHARACTERS = {
 	c:GTS1 ?= {
 		create_character = {
 			# Hanfere ibn Aydahis

@@ -1,4 +1,4 @@
-gts_liquid = {
+﻿gts_liquid = {
     texture = "gfx/interface/icons/goods_icons/gts_liquid.dds"
     cost = 50
     category = staple

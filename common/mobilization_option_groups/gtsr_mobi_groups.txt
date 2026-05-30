@@ -1,4 +1,4 @@
-gtsr_support_unit = {#
+﻿gtsr_support_unit = {#
     icon = "gfx/interface/icons/generic_icons/generic_concept_icon.dds"
     weight = 2
 }

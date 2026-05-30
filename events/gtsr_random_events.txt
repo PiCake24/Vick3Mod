@@ -1,4 +1,4 @@
-namespace = gtsr_industrial_events
+﻿namespace = gtsr_industrial_events
 namespace = gtsr_social_events
 namespace = gtsr_diplomatic
 namespace = gtsr_tech_events

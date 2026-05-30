@@ -1,4 +1,4 @@
-state_gts_population_growth = {
+﻿state_gts_population_growth = {
     value = 0
     add = modifier:state_gts_birth_rate_mult
     multiply = state_gts_population

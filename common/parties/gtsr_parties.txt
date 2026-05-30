@@ -1,4 +1,4 @@
-
+﻿
 
 gts_party = {
     color = { 100 60 198 }

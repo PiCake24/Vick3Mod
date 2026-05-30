@@ -1,4 +1,4 @@
-gtsr_social_hierarchy = {
+﻿gtsr_social_hierarchy = {
     pop_criteria = {
         custom_tooltip = {
             text = gtsr_social_hierarchy_trigger_desc

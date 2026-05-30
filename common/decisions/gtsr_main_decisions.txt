@@ -1,4 +1,4 @@
-gtsr_start = {
+﻿gtsr_start = {
     is_shown = { #是否显示
         NOT = { has_variable = gtsr_country }
     }
@@ -15,6 +15,6 @@ gtsr_start = {
         trigger_event = { id = gtsr_main.1 popup = yes }
     }
     ai_chance = {
-        base = 0
+        value = 0
     }
 }

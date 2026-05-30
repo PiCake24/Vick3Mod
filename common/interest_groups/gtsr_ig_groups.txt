@@ -1,4 +1,4 @@
-ig_gts = {
+﻿ig_gts = {
     color = hsv { 0.88 0.543 0.902 }
     texture = "gfx/interface/icons/ig_icons/ig_gts.dds"
     layer = "revolution_dynamic_petty_bourgeoisie"
@@ -188,11 +188,11 @@ ig_gts = {
                     is_in_government = yes
                 }
             }
-            multiply = { # Multiplied by 1.25x max
+            multiply = { # Multiplied by 10.25x max
                 desc = "POP_LOYALISTS"
                 value = pop_loyalist_fraction
                 divide = 4
-                add = 1
+                add = 10
             }
         }
         if = {
@@ -201,11 +201,11 @@ ig_gts = {
                     is_in_government = no
                 }
             }
-            multiply = { # Multiplied by 1.25x max
+            multiply = { # Multiplied by 10.25x max
                 desc = "POP_RADICALS"
                 value = pop_radical_fraction
                 divide = 4
-                add = 1
+                add = 10
             }
         }
     }
@@ -434,14 +434,14 @@ ig_gts = {
 
     # The chance that a commander belonging to this IG takes over leadership when it changes
     # scope:character is the most popular commander in the IG
-    commander_leader_chance = {
+    commander_leader_weight = {
         value = 0.25
         multiply = ig_commander_leader_chance_mult
     }
 
     # The chance that a executive belonging to this IG takes over leadership when it changes
     # scope:character is the most popular executive in the IG
-    executive_leader_chance = {
+    executive_leader_weight = {
         value = 0.5
     }
 }

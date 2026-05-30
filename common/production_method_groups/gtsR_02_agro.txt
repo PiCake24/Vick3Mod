@@ -1,4 +1,4 @@
-#黑麦农场
+﻿#黑麦农场
 INJECT:pmg_base_building_rye_farm = { #黑麦农场
     production_methods = {
         pm_gts_enriching_farming

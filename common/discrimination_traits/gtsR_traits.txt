@@ -1,4 +1,4 @@
-heritage_gts = {
+﻿heritage_gts = {
     type = heritage
     trait_group = heritage_group_gts
 }

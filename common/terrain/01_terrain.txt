@@ -621,9 +621,42 @@ jungle = {
 	textures = {
 		{
 			weight = {
-				value = 1
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
+							NOT = {
+								culture_percent_state = {
+									target = cu:gts_cult1
+									value > 0.01
+								}
+								
+							}
+						}
+					}
+					add = 1
+				}
 			}
 			path = "gfx/state_pictures/jungle.dds"
+			effect = "vfx_entity_ui_state_jungle"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
+							culture_percent_state = {
+								target = cu:gts_cult1
+								value > 0.01
+								
+							}
+						}
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/jungle_gts.dds"
 			effect = "vfx_entity_ui_state_jungle"
 		}
 	}
@@ -723,6 +756,27 @@ desert = {
 				}
 			}
 			path = "gfx/state_pictures/desert_northamerica.dds"
+			effect = "vfx_entity_ui_state_desert_northamerica"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
+							is_in_geographic_region = geographic_region_americas
+							culture_percent_state = {
+								target = cu:gts_cult1
+								value > 0.01
+								
+							}
+						}
+
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/desert_northamerica_gts.dds"
 			effect = "vfx_entity_ui_state_desert_northamerica"
 		}
 		{
@@ -1208,6 +1262,12 @@ farmland_rice = {
 					limit = {
 						scope:state = {
 							is_arabic_farmland = yes
+							not = {
+								culture_percent_state = {
+									target = cu:gts_cult1
+									value > 0.01
+								}
+							}
 						}
 					}
 					add = 1
@@ -1222,6 +1282,31 @@ farmland_rice = {
 				if = {
 					limit = {
 						scope:state = {
+							is_arabic_farmland = yes
+							culture_percent_state = {
+								target = cu:gts_cult1
+								value > 0.01
+							}
+						}
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/farmland_arabic_gts.dds"
+			effect = "vfx_entity_ui_state_farmland_arabic"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
+							not = {
+								culture_percent_state = {
+									target = cu:gts_cult1
+									value > 0.01
+								}
+							}
 							is_asian_farmland = yes
 						}
 					}
@@ -1237,13 +1322,57 @@ farmland_rice = {
 				if = {
 					limit = {
 						scope:state = {
+							culture_percent_state = {
+								target = cu:gts_cult1
+								value > 0.01
+							}
+							is_asian_farmland = yes
+						}
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/farmland_asian_gts.dds"
+			effect = "vfx_entity_ui_state_farmland_asian"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
 							is_subtropic_farmland = yes
+							NOT = {
+								culture_percent_state = {
+									target = cu:gts_cult1
+									value > 0.01
+								}
+							}
 						}
 					}
 					add = 1
 				}
 			}
 			path = "gfx/state_pictures/farmland_subtropic.dds"
+			effect = "vfx_entity_ui_state_farmland_subtropic"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
+							is_subtropic_farmland = yes
+							culture_percent_state = {
+								target = cu:gts_cult1
+								value > 0.01
+							}
+						}
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/farmland_subtropic_gts.dds"
 			effect = "vfx_entity_ui_state_farmland_subtropic"
 		}
 		{
@@ -1318,6 +1447,12 @@ farmland_millet = {
 					limit = {
 						scope:state = {
 							is_arabic_farmland = yes
+							not = {
+								culture_percent_state = {
+									target = cu:gts_cult1
+									value > 0.01
+								}
+							}
 						}
 					}
 					add = 1
@@ -1332,6 +1467,31 @@ farmland_millet = {
 				if = {
 					limit = {
 						scope:state = {
+							is_arabic_farmland = yes
+							culture_percent_state = {
+								target = cu:gts_cult1
+								value > 0.01
+							}
+						}
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/farmland_arabic_gts.dds"
+			effect = "vfx_entity_ui_state_farmland_arabic"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
+							not = {
+								culture_percent_state = {
+									target = cu:gts_cult1
+									value > 0.01
+								}
+							}
 							is_asian_farmland = yes
 						}
 					}
@@ -1347,13 +1507,57 @@ farmland_millet = {
 				if = {
 					limit = {
 						scope:state = {
+							culture_percent_state = {
+								target = cu:gts_cult1
+								value > 0.01
+							}
+							is_asian_farmland = yes
+						}
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/farmland_asian_gts.dds"
+			effect = "vfx_entity_ui_state_farmland_asian"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
 							is_subtropic_farmland = yes
+							NOT = {
+								culture_percent_state = {
+									target = cu:gts_cult1
+									value > 0.01
+								}
+							}
 						}
 					}
 					add = 1
 				}
 			}
 			path = "gfx/state_pictures/farmland_subtropic.dds"
+			effect = "vfx_entity_ui_state_farmland_subtropic"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
+							is_subtropic_farmland = yes
+							culture_percent_state = {
+								target = cu:gts_cult1
+								value > 0.01
+							}
+						}
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/farmland_subtropic_gts.dds"
 			effect = "vfx_entity_ui_state_farmland_subtropic"
 		}
 		{
@@ -1482,6 +1686,12 @@ farmland_wheat = {
 					limit = {
 						scope:state = {
 							is_arabic_farmland = yes
+							not = {
+								culture_percent_state = {
+									target = cu:gts_cult1
+									value > 0.01
+								}
+							}
 						}
 					}
 					add = 1
@@ -1496,6 +1706,31 @@ farmland_wheat = {
 				if = {
 					limit = {
 						scope:state = {
+							is_arabic_farmland = yes
+							culture_percent_state = {
+								target = cu:gts_cult1
+								value > 0.01
+							}
+						}
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/farmland_arabic_gts.dds"
+			effect = "vfx_entity_ui_state_farmland_arabic"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
+							not = {
+								culture_percent_state = {
+									target = cu:gts_cult1
+									value > 0.01
+								}
+							}
 							is_asian_farmland = yes
 						}
 					}
@@ -1511,13 +1746,57 @@ farmland_wheat = {
 				if = {
 					limit = {
 						scope:state = {
+							culture_percent_state = {
+								target = cu:gts_cult1
+								value > 0.01
+							}
+							is_asian_farmland = yes
+						}
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/farmland_asian_gts.dds"
+			effect = "vfx_entity_ui_state_farmland_asian"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
 							is_subtropic_farmland = yes
+							NOT = {
+								culture_percent_state = {
+									target = cu:gts_cult1
+									value > 0.01
+								}
+							}
 						}
 					}
 					add = 1
 				}
 			}
 			path = "gfx/state_pictures/farmland_subtropic.dds"
+			effect = "vfx_entity_ui_state_farmland_subtropic"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
+							is_subtropic_farmland = yes
+							culture_percent_state = {
+								target = cu:gts_cult1
+								value > 0.01
+							}
+						}
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/farmland_subtropic_gts.dds"
 			effect = "vfx_entity_ui_state_farmland_subtropic"
 		}
 		{
@@ -1592,6 +1871,12 @@ farmland_maize = {
 					limit = {
 						scope:state = {
 							is_arabic_farmland = yes
+							not = {
+								culture_percent_state = {
+									target = cu:gts_cult1
+									value > 0.01
+								}
+							}
 						}
 					}
 					add = 1
@@ -1606,6 +1891,31 @@ farmland_maize = {
 				if = {
 					limit = {
 						scope:state = {
+							is_arabic_farmland = yes
+							culture_percent_state = {
+								target = cu:gts_cult1
+								value > 0.01
+							}
+						}
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/farmland_arabic_gts.dds"
+			effect = "vfx_entity_ui_state_farmland_arabic"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
+							not = {
+								culture_percent_state = {
+									target = cu:gts_cult1
+									value > 0.01
+								}
+							}
 							is_asian_farmland = yes
 						}
 					}
@@ -1621,13 +1931,57 @@ farmland_maize = {
 				if = {
 					limit = {
 						scope:state = {
+							culture_percent_state = {
+								target = cu:gts_cult1
+								value > 0.01
+							}
+							is_asian_farmland = yes
+						}
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/farmland_asian_gts.dds"
+			effect = "vfx_entity_ui_state_farmland_asian"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
 							is_subtropic_farmland = yes
+							NOT = {
+								culture_percent_state = {
+									target = cu:gts_cult1
+									value > 0.01
+								}
+							}
 						}
 					}
 					add = 1
 				}
 			}
 			path = "gfx/state_pictures/farmland_subtropic.dds"
+			effect = "vfx_entity_ui_state_farmland_subtropic"
+		}
+		{
+			weight = {
+				value = 0
+				if = {
+					limit = {
+						scope:state = {
+							is_subtropic_farmland = yes
+							culture_percent_state = {
+								target = cu:gts_cult1
+								value > 0.01
+							}
+						}
+					}
+					add = 1
+				}
+			}
+			path = "gfx/state_pictures/farmland_subtropic_gts.dds"
 			effect = "vfx_entity_ui_state_farmland_subtropic"
 		}
 		{
@@ -1732,7 +2086,7 @@ cleared_land = {
 			}
 			path = "gfx/state_pictures/cleared_land_gts.dds"
 			effect = "vfx_entity_ui_state_cleared_land"
-		}s
+		}
 	}
 
 	combat_width = 1.5

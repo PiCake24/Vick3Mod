@@ -1,4 +1,4 @@
-objective_gts_dominance = {
+﻿objective_gts_dominance = {
     enabled_background = "gfx/interface/icons/objectives/gts_dominance_illu.dds"
     icon = "gfx/interface/icons/objectives/gts_dominance.dds"
 

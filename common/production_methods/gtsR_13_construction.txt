@@ -1,4 +1,4 @@
-pm_gts_buildings = {
+﻿pm_gts_buildings = {
     texture = "gfx/interface/icons/production_method_icons/gts_maid.dds"
 
     unlocking_technologies = {

@@ -1,4 +1,4 @@
-pm_gts_residential1 = {
+﻿pm_gts_residential1 = {
     texture = "gfx/interface/icons/production_method_icons/gts_residential1.dds"
 
     unlocking_technologies = {
@@ -31,7 +31,6 @@ pm_gts_residential1 = {
             building_gts_servent_standard_of_living_add = 5
         }
     }
-    ai_weight = 0
 }
 
 pm_base_gts_cloth_method1 = {
@@ -263,7 +262,6 @@ pm_gts_summon = {
         #law_wsg_ruler
         #law_wsg_only
     }
-    ai_weight = 1000
     unlocking_technologies = {
         #identification_documents
     }

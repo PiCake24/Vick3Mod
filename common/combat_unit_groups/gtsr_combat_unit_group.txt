@@ -1,5 +1,5 @@
-
-combat_unit_group_gts_infantry = {
-    color = { 130  182  69 }
-    icon = "gfx/interface/icons/pops_icons/gts_maid.dds"
-}
+﻿
+#combat_unit_group_gts_infantry = {
+#    color = { 130  182  69 }
+#    icon = "gfx/interface/icons/pops_icons/gts_maid.dds"
+#}
