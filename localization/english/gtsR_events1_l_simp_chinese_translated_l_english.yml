@@ -1,10 +1,11 @@
 ﻿l_english:
 gtsr_main.1.t: "Gigantic Incident Report"
 gtsr_main.1.d: "There have been numerous reports of women becoming gigantic in the capital of [ROOT.GetCountry.GetCapital.GetName]!"
-gtsr_main.1.f: "According to reports recieved by the local administration, hundreds of women have grown to a height of more than ten meters in the past day. The reason is unknown, but many residents believe that it may be related to the recent astronomical anomalies.\n\n"They suddenly became huge at home, and the surrounding streets and houses were suddenly crushed by their huge bodies! \n\n"Neighbors said that they often see bright lights flashing in the sky at night, and some people hear the roar of something."\n\nFortunately, these giant girls are still sane, and the local government has placed them together. Researchers are studying the reasons behind the phenomenon of gigantism."
+gtsr_main.1.f: "According to reports recieved by the local authorities, hundreds of women have grown to a height of more than ten meters in the past day. The cause remains unknown, but many residents believe that it may be related to the recent astronomical phenomena.\n\n"They suddenly grew enormous right in their homes, instantly crushing the surrounding streets and houses with their massive bodies!" \n\nFortunately, these giant girls are still sane, and the local authorities has placed them together. Researchers are studying the reasons behind the gigantism phenomenon."
 gtsr_main.1.a: "Disturbing."
 gtsr_main.1.tooltips: "5% of the population of [ROOT.GetCountry.GetCapital.GetName] becomes [concept_gts]"
-gtsr_main.2.t: "Huge reverse research completed"
-gtsr_main.2.d: "We have initially understood the secret of these gigantic women--now we call them "[concept_gts]"--"
-gtsr_main.2.f: "Researchers have found that regardless of the reason why these women originally became gigantic, their current body fluids also contain things that can make people gigantic. However, current tests show that only some women aged 18-30 can obtain this ability.\n\nNow, we can already extract their body fluids to make more girls gigantic!"
+
+gtsr_main.2.t: "Reverse Engineering of Gigantification Complete"
+gtsr_main.2.d: "We have begun to unravel the mystery of these gigantic women—whom we now refer to as “[concept_gts]”—."
+gtsr_main.2.f: "Researchers have discovered that regardless of what initially caused these women to grow to gigantic size, their bodily fluids now contain a substance capable of causing giantism. However, current tests indicate that only some women between the ages of 18 and 30 can acquire this ability. \n\nNow, by extracting their bodily fluids, we can make more women grow to gigantic size!"
 gtsr_main.2.a: "They will make our country great again!"
