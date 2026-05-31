@@ -1,5 +1,5 @@
 ﻿l_english:
 modifier_stomp_excution: "Crushing public figures"
 stomp_to_death: "Stomp to death"
-stomp_to_death_desc: ""It's not an insect I like, I'll just crush it to death""
-stomp_to_death_text: "[SCOPE.sCharacter('assassinated_scope').GetFullName] was crushed by #b giant girl!"
+stomp_to_death_desc: ""I hate bugs, so I'll just crush them to death""
+stomp_to_death_text: "[SCOPE.sCharacter('assassinated_scope').GetFullName] was crushed by a #b giantess!"
