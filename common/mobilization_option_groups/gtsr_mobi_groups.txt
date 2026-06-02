@@ -6,7 +6,7 @@ gtsr_footwear = {#
     icon = "gfx/interface/icons/generic_icons/generic_concept_icon.dds"
     weight = 2
 }
-gtsr_supplies = {
-	icon = "gfx/interface/icons/generic_icons/generic_concept_icon.dds"
-    weight = 2
-}
+#gtsr_supplies = {
+#	icon = "gfx/interface/icons/generic_icons/generic_concept_icon.dds"
+#    weight = 2
+#}

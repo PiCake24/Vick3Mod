@@ -464,7 +464,7 @@ law_gts_research = {#人类实验品
     institution = institution_schools
     institution_modifier = {
         state_literacy_growth_add = 0.001
-        interest_group_ig_gts_pol_str_mult = 0.1
+        interest_group_ig_gts_pol_str_mult = 0.05
         state_education_access_add = 0.15
         state_assimilation_mult = 0.15
         state_conversion_mult = 0.15
@@ -523,10 +523,9 @@ law_gts_police = {
         state_radicalism_increases_violent_hostility_mult = -0.1
         state_radicalism_increases_cultural_erasure_mult = -0.1
         state_radicalism_increases_open_prejudice_mult = -0.1
-        interest_group_ig_gts_pol_str_mult = 0.1
+        interest_group_ig_gts_pol_str_mult = 0.05
         state_mortality_turmoil_mult = 0.04
         state_turmoil_effects_mult = -0.05
-		country_infamy_generation_mult = -0.05
     }
 
     can_impose = {
@@ -563,16 +562,17 @@ law_colonial_resettlement_gts = {
     }
 
     modifier = {
-        interest_group_ig_gts_pol_str_mult = 0.1
+        interest_group_ig_gts_pol_str_mult = 0.05
         state_migration_pull_unincorporated_mult = 0.5
         state_colony_growth_creation_factor = 1 #殖民增长量
         state_colony_growth_speed_mult = 2#殖民增长速度
 		country_infamy_generation_mult = -0.2
+		country_infamy_generation_against_unrecognized_mult = -0.6
     }
 
     institution = institution_colonial_affairs
     institution_modifier = {
-
+		
     }
 
     can_impose = {
@@ -611,12 +611,12 @@ law_gts_health = {
         gts_growth_tech1
     }
     modifier = {
-        interest_group_ig_gts_pol_str_mult = 0.1
+        interest_group_ig_gts_pol_str_mult = 0.05
     }
     institution = institution_health_system
     institution_modifier = {
-        state_mortality_mult = -0.08
-        state_birth_rate_mult = 0.08
+        state_mortality_mult = -0.03
+        state_birth_rate_mult = 0.1
         state_pollution_reduction_health_mult = -0.2
         state_standard_of_living_add = 1
 
@@ -648,15 +648,14 @@ law_secret_gts_police = {
 
     institution = institution_home_affairs
     institution_modifier = {
-        interest_group_ig_gts_pol_str_mult = 0.1
-        state_mortality_mult = -0.02
+        interest_group_ig_gts_pol_str_mult = 0.05
         country_suppression_attraction_factor = -0.1
         political_movement_radicalism_add = -0.1
         country_support_separatism_resistance_mult = 0.1
         country_support_separatism_strength_mult = 0.1
         country_amenability_add = 5
         country_coup_resistance_add = 2
-		country_infamy_generation_mult = -0.4
+		state_incorporation_speed_mult = 0.25
     }
 
     ai_enact_weight_modifier = { #Petitions
@@ -675,10 +674,11 @@ law_worker_gts_protections = {
         gts_growth_tech1
     }
     modifier = {
-        interest_group_ig_gts_pol_str_mult = 0.1
+        interest_group_ig_gts_pol_str_mult = 0.05
     }
     institution = institution_workplace_safety
     institution_modifier = {
+		building_throughput_add = 0.02
         building_minimum_wage_mult = 0.1
         state_infrastructure_mult =0.2
         building_working_conditions_mult = -0.1
@@ -700,7 +700,7 @@ law_child_gts_allowed = {
     progressiveness = 0
 
     modifier = {
-        interest_group_ig_gts_pol_str_mult = 0.1
+        interest_group_ig_gts_pol_str_mult = 0.05
         state_gtsr_tiny_lower_class_mortality_mult = 0.15
         state_gtsr_lower_class_mortality_mult = -0.1
         state_gtsr_middle_class_mortality_mult =-0.15
@@ -737,7 +737,7 @@ law_gts_wealthy = {
         gts_growth_tech1
     }
     modifier = {
-        interest_group_ig_gts_pol_str_mult = 0.1
+        interest_group_ig_gts_pol_str_mult = 0.05
     }
     institution = institution_social_security
     institution_modifier = {

@@ -180,119 +180,119 @@ mobilization_option_gtsr_shoes = {
 
     group = gtsr_footwear
 }
-mobilization_option_feast={
-	texture = "gfx/interface/icons/mobilization_options/luxurious_supplies.dds"
-	possible = {
-        scope:military_formation = {
-            OR = {
-                formation_army_unit_type_fraction = {
-                    target = unit_type:combat_unit_type_gts_100m
-                    value >= 0.3
-                }
-                formation_army_unit_type_fraction = {
-                    target = unit_type:combat_unit_type_gts_1000m
-                    value >= 0.3
-                }
-            }
-            NOT = {
-                has_mobilization_option = mobilization_option:mobilization_option_starve
-            }
-        }
-    }
-	on_activate_while_mobilized = {
-        custom_tooltip = {
-            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
-            add_organization = {
-                value = organization
-                multiply = -0.1
-            }
-        }
-    }
-
-    on_deactivate = {
-        custom_tooltip = {
-            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
-            add_organization = {
-                value = organization
-                multiply = -0.1
-            }
-        }
-    }
-	unlocking_technologies = {
-        gts_growth_tech1
-    }
-    upkeep_modifier = {
-		goods_input_groceries_add = 100
-		goods_input_meat_mult = 5
-		goods_input_liquor_mult = 5
-		goods_input_sugar_mult = 5
-		goods_input_tobacco_mult = 5
-		goods_input_opium_mult = 5
-    }
-
-    unit_modifier = {
-        unit_morale_loss_mult = -0.3
-		unit_offense_mult = 0.5
-		unit_defense_mult = 0.5
-		unit_morale_recovery_mult = 0.2
-    }
-	group = gtsr_supplies
-}
-mobilization_option_starve={
-	texture = "gfx/interface/icons/mobilization_options/basic_supplies.dds"
-	possible = {
-        scope:military_formation = {
-            OR = {
-                formation_army_unit_type_fraction = {
-                    target = unit_type:combat_unit_type_gts_100m
-                    value >= 0.3
-                }
-                formation_army_unit_type_fraction = {
-                    target = unit_type:combat_unit_type_gts_1000m
-                    value >= 0.3
-                }
-            }
-            NOT = {
-                has_mobilization_option = mobilization_option:mobilization_option_feast
-            }
-        }
-    }
-	on_activate_while_mobilized = {
-        custom_tooltip = {
-            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
-            add_organization = {
-                value = organization
-                multiply = -0.1
-            }
-        }
-    }
-
-    on_deactivate = {
-        custom_tooltip = {
-            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
-            add_organization = {
-                value = organization
-                multiply = -0.1
-            }
-        }
-    }
-	unlocking_technologies = {
-        gts_growth_tech1
-    }
-    upkeep_modifier = {
-		goods_input_groceries_add = -50
-		goods_input_meat_mult = -2
-		goods_input_liquor_mult = -2
-		goods_input_sugar_mult = -2
-		goods_input_tobacco_mult = -2
-		goods_input_opium_mult = -2
-    }
-
-    unit_modifier = {
-        unit_morale_loss_mult = 1
-		unit_offense_mult = -0.25
-		unit_defense_mult = -0.25
-		unit_morale_recovery_mult = -0.2
-    }
-	group = gtsr_supplies
-}
+#mobilization_option_feast={
+#	texture = "gfx/interface/icons/mobilization_options/luxurious_supplies.dds"
+#	possible = {
+#        scope:military_formation = {
+#            OR = {
+#                formation_army_unit_type_fraction = {
+#                    target = unit_type:combat_unit_type_gts_100m
+#                    value >= 0.3
+#                }
+#                formation_army_unit_type_fraction = {
+#                    target = unit_type:combat_unit_type_gts_1000m
+#                    value >= 0.3
+#                }
+#            }
+#            NOT = {
+#                has_mobilization_option = mobilization_option:mobilization_option_starve
+#            }
+#        }
+#    }
+#	on_activate_while_mobilized = {
+#        custom_tooltip = {
+#            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+#            add_organization = {
+#                value = organization
+#                multiply = -0.1
+#            }
+#        }
+#    }
+#
+#    on_deactivate = {
+#        custom_tooltip = {
+#            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+#            add_organization = {
+#                value = organization
+#                multiply = -0.1
+#            }
+#        }
+#    }
+#	unlocking_technologies = {
+#        gts_growth_tech1
+#    }
+#    upkeep_modifier = {
+#		goods_input_groceries_add = 100
+#		goods_input_meat_mult = 5
+#		goods_input_liquor_mult = 5
+#		goods_input_sugar_mult = 5
+#		goods_input_tobacco_mult = 5
+#		goods_input_opium_mult = 5
+#    }
+#
+#    unit_modifier = {
+#        unit_morale_loss_mult = -0.3
+#		unit_offense_mult = 0.5
+#		unit_defense_mult = 0.5
+#		unit_morale_recovery_mult = 0.2
+#    }
+#	group = gtsr_supplies
+#}
+#mobilization_option_starve={
+#	texture = "gfx/interface/icons/mobilization_options/basic_supplies.dds"
+#	possible = {
+#        scope:military_formation = {
+#            OR = {
+#                formation_army_unit_type_fraction = {
+#                    target = unit_type:combat_unit_type_gts_100m
+#                    value >= 0.3
+#                }
+#                formation_army_unit_type_fraction = {
+#                    target = unit_type:combat_unit_type_gts_1000m
+#                    value >= 0.3
+#                }
+#            }
+#            NOT = {
+#                has_mobilization_option = mobilization_option:mobilization_option_feast
+#            }
+#        }
+#    }
+#	on_activate_while_mobilized = {
+#        custom_tooltip = {
+#            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+#            add_organization = {
+#                value = organization
+#                multiply = -0.1
+#            }
+#        }
+#    }
+#
+#    on_deactivate = {
+#        custom_tooltip = {
+#            text = mobilization_option_it_hurts_organization_when_you_adjust_equipment_tt
+#            add_organization = {
+#                value = organization
+#                multiply = -0.1
+#            }
+#        }
+#    }
+#	unlocking_technologies = {
+#        gts_growth_tech1
+#    }
+#    upkeep_modifier = {
+#		goods_input_groceries_add = -50
+#		goods_input_meat_mult = -2
+#		goods_input_liquor_mult = -2
+#		goods_input_sugar_mult = -2
+#		goods_input_tobacco_mult = -2
+#		goods_input_opium_mult = -2
+#    }
+#
+#    unit_modifier = {
+#        unit_morale_loss_mult = 1
+#		unit_offense_mult = -0.25
+#		unit_defense_mult = -0.25
+#		unit_morale_recovery_mult = -0.2
+#    }
+#	group = gtsr_supplies
+#}

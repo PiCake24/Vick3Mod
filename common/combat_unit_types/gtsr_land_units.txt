@@ -21,7 +21,8 @@
         unit_morale_loss_add = 5
         unit_kill_rate_add = 0.6
         unit_morale_damage_mult = 0.2
-		 unit_devastation_mult = 1
+		unit_devastation_mult = 1
+		unit_occupation_mult = 0.3
     }
 
     formation_modifier = {
@@ -47,7 +48,7 @@ combat_unit_type_gts_1000m = {
         goods_input_gts_socks_add = 1
         goods_input_gts_cloth_add = 10
         goods_input_artillery_add = 10
-        goods_input_groceries_add = 100
+        goods_input_groceries_add = 20
 		goods_input_meat_mult = 5
 		goods_input_liquor_mult = 5
 		goods_input_sugar_mult = 5
@@ -63,6 +64,7 @@ combat_unit_type_gts_1000m = {
         unit_morale_damage_mult = 0.4
         unit_devastation_mult = 5
 		unit_naval_invasion_efficiency_mult = 1.0
+		unit_occupation_mult = 1
     }
 
     formation_modifier = {

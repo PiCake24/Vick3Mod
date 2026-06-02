@@ -1,6 +1,7 @@
 ﻿l_english:
 interest_group_ig_gts_pol_str_mult: "@ig_gts!$ig_gts$[concept_political_strength]"
 interest_group_ig_gts_pol_str_mult_desc: "Buff or penalty to @ig_gts!$ig_gts$[concept_interest_group] total [concept_political_strength]"
+
 country_gtsr_upper_class_acceptance_max_add: "The highest [concept_acceptance] of $gtsr_upper_class$[concept_social_class]"
 country_gtsr_upper_class_acceptance_max_add_desc: "[concept_social_class][Concept('concept_pop', '$concept_pops$')]'s [concept_acceptance] will not be higher than this value"
 country_gtsr_upper_class_acceptance_min_add: "The lowest [concept_acceptance] of $gtsr_upper_class$[concept_social_class]"
@@ -31,6 +32,7 @@ country_gtsr_lower_class_cultural_acceptance_add: "Culture [concept_acceptance] 
 country_gtsr_tiny_upper_class_cultural_acceptance_add: "The culture of $gtsr_tiny_upper_class$[concept_social_class][concept_acceptance]"
 country_gtsr_tiny_middle_class_cultural_acceptance_add: "Culture [concept_acceptance] of $gtsr_tiny_middle_class$[concept_social_class]"
 country_gtsr_tiny_lower_class_cultural_acceptance_add: "Culture [concept_acceptance] of $gtsr_tiny_lower_class$[concept_social_class]"
+
 state_gts_leader_investment_pool_contribution_add: "$gts_leader$[concept_investment_pool]contribution"
 state_gts_servent_investment_pool_contribution_add: "$gts_servent$[concept_investment_pool]contribution"
 state_gts_maid_investment_pool_contribution_add: "$gts_maid$[concept_investment_pool]contribution"
@@ -46,9 +48,11 @@ state_gtsr_tiny_upper_class_standard_of_living_add: "[concept_sol] of $gtsr_tiny
 state_gtsr_lower_class_standard_of_living_add: "[concept_sol] of $gtsr_lower_class$"
 state_gtsr_middle_class_standard_of_living_add: "[concept_sol] of $gtsr_middle_class$"
 state_gtsr_upper_class_standard_of_living_add: "[concept_sol] of $gtsr_upper_class$"
+
 building_gts_cloth_factory_throughput_add: "$building_gts_cloth_factory$building[concept_throughput]"
 building_gts_residential_area_throughput_add: "$building_gts_residential_area$building[concept_throughput]"
 modifier_gtsr_industrial_events_1a: "It is legal for humans to enter shoes"
+
 gts_cursh_potlic: "Giant foot politics"
 defunded_gts_police: "Condemn the giant woman's violent law enforcement"
 gts_border_sovereignity_questioned: "Invaded by a giant woman"
