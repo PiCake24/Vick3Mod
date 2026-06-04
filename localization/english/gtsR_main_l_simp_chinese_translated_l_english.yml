@@ -1,9 +1,9 @@
 ﻿l_english:
 GTS_SERVENT_QUALIFICATIONS_DESC: "11"
 IS_GTS: "It's a huge girl"
-THERE_ARE_GTS: "Giant Girl Influence"
+THERE_ARE_GTS: "Giantess Influence"
 concept_gts: "Giantess"
-concept_gts_desc: "Giant human women, ranging in height from tens to hundreds of meters, and a few even have taller bodies. The reason for the initial enlargement is unknown. It is said to come from influences outside our world."
+concept_gts_desc: "Giant human women, ranging in height from tens to hundreds of meters, and some are even bigger. The reason for the initial enlargement is unknown. It is said to come from influences outside our world."
 
 gtsr_social_hierarchy_trigger_desc: "[concept_culture] belonging to #b huge niang heritage#! [concept_cultural_trait]"
 gtsr_social_hierarchy: "The Class System of the Land of Giant Maids"
@@ -30,7 +30,7 @@ gts_leader_desc: "Giant Noble Woman."
 gts_cache: "@gts_cache!$gts_cache_no_icon$"
 gts_cache_only_icon: "@gts_cache!"
 gts_cache_no_icon: "qualified person"
-gts_cache_desc: "A human woman suitable for becoming a giant mother."
+gts_cache_desc: "A human woman suitable for becoming a giantess."
 
 pm_gts_maid: "Giant Maid Town"
 
@@ -54,7 +54,7 @@ building_gts_transform: "The number of human girls has increased to a huge exten
 building_gts_transform_desc: "TODO"
 state_gts_birth_rate_mult: "Giant Birth Rate"
 state_gts_birth_rate_mult_desc: "TODO"
-state_gts_discover_rate: "Probability of the arrival of a giant mother"
+state_gts_discover_rate: "Probability of the arrival of a giantess"
 state_gts_discover_rate_desc: "TODO"
 gts_transformation_cooldown: "Gigantic Cooling"
 building_group_bg_gts_transformation_employee_mult: "Enhancing facility capacity"

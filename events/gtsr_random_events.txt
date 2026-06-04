@@ -268,6 +268,78 @@ gtsr_social_events.2 = { #Newspaper writes article about minority culture
         }
     }
 }
+gtsr_social_events.3 = {
+    type = country_event
+    placement = scope:gts_violence_state
+    title = gtsr_social_events.3.t
+    desc = gtsr_social_events.3.d
+    flavor = gtsr_social_events.3.f
+
+    event_image = {
+        video = "gtsr_event_16"
+    }
+
+    on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+
+    icon = "gfx/interface/icons/event_icons/event_protest.dds"
+
+    duration = 3
+
+    cooldown = { days = 360000 }
+
+    trigger = {
+        has_law_or_variant = law_type:law_gts_monarchy
+		OR = {
+			ruler = {
+				is_female = no
+			}
+			NOT = {
+				ruler = {
+					interest_group ?= {
+						is_interest_group_type = ig_gts
+					}
+				}
+			}
+			
+		}
+        
+    }
+	immediate = {
+		create_character = {
+			culture = gts_cult1
+			female = yes
+			interest_group = ig_gts
+			save_scope_as = gtsruler
+		}
+	}
+	
+    option = {
+        name =  gtsr_social_events.3.a
+		if = {
+			limit = { 
+				OR = {
+					ruler = { is_female = no }
+				}
+			}
+			show_as_tooltip = {
+				create_character = {
+					culture = gts_cult1
+					female = yes
+					interest_group = ig_gts
+					save_scope_as = gtsruler
+				}
+			}
+			scope:gtsruler = { set_character_as_ruler = yes }
+		}
+		else = {
+			ruler = {
+				set_interest_group = PREV.ig:ig_gts
+			}
+		}
+		
+    }
+}
+
 
 gtsr_diplomatic.1 = { # Soldiers Cross the Border
     type = country_event

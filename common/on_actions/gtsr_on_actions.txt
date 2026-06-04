@@ -6,6 +6,7 @@
         50 = gtsr_diplomatic.2
         50 = gtsr_diplomatic.1
         50 = gtsr_social_events.2
+		50 = gtsr_social_events.3
     }
 }
 

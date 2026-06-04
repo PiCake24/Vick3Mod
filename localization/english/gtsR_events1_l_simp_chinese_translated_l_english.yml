@@ -1,7 +1,7 @@
 ﻿l_english:
 gtsr_main.1.t: "Gigantic Incident Report"
 gtsr_main.1.d: "There have been numerous reports of women becoming gigantic in the capital of [ROOT.GetCountry.GetCapital.GetName]!"
-gtsr_main.1.f: "According to reports recieved by the local authorities, hundreds of women have grown to a height of more than ten meters in the past day. The cause remains unknown, but many residents believe that it may be related to the recent astronomical phenomena.\n\n"They suddenly grew enormous right in their homes, instantly crushing the surrounding streets and houses with their massive bodies!" \n\nFortunately, these giant girls are still sane, and the local authorities has placed them together. Researchers are studying the reasons behind the gigantism phenomenon."
+gtsr_main.1.f: "According to reports recieved by the local authorities, hundreds of women have grown to a height of more than ten meters in the past day. The cause remains unknown, but many residents believe that it may be related to the recent astronomical phenomena.\n\n"They suddenly grew enormous right in their homes, instantly crushing the surrounding streets and houses with their massive bodies!" \n\n"Neighbors said that they saw bright flashing lights in the sky at night and some people even heard a rumbling sound."\n\nFortunately, these giant girls are still sane, and the local authorities has placed them together. Researchers are studying the reasons behind the gigantism phenomenon."
 gtsr_main.1.a: "Disturbing."
 gtsr_main.1.tooltips: "5% of the population of [ROOT.GetCountry.GetCapital.GetName] becomes [concept_gts]"
 

@@ -66,3 +66,8 @@ gtsr_diplomatic.2.t: "City Destroyer"
 gtsr_diplomatic.2.d: "In [SCOPE.sWar('gts_event_war').GetName], after our giant girl invaded the enemy's city, she specially used the Gigantamax technology to descend on the enemy-occupied city at a size of 100,000 times."
 gtsr_diplomatic.2.f: "Although this kind of dynamism can only last for a few minutes, the horrific damage caused has already been spread by various newspapers. The photos of the huge footprints remaining in the city have undoubtedly caused huge panic among our enemies."
 gtsr_diplomatic.2.a: "Fortunately she is from our side"
+
+gtsr_social_events.3.t: "The Succession Question"
+gtsr_social_events.3.d: "With the establishment of the Giantess Monarchy, the legitimacy of the crown is no longer determined solely by bloodline. The throne is now regarded as the sacred institution of giantess rule, and many argue that it must always be occupied by a giantess who embodies the ideals of the realm.\n\nThe recent succession has sparked debate throughout the country. Traditionalists point to dynastic rights, while supporters of the new order insist that the crown itself transcends individual claimants. As pressure mounts from the Giantess movement, a decision can no longer be delayed."
+gtsr_social_events.3.f: "\"The crown belongs not to the heir, but to she who stands above the nation and carries its destiny upon her shoulders.\""
+gtsr_social_events.3.a: "The throne shall be held by a giantess."
