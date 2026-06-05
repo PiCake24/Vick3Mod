@@ -18,3 +18,28 @@
         value = 0
     }
 }
+gtsr_fix1 = {
+	is_shown = {
+        has_variable = gtsr_country
+        NOT ={
+            any_primary_culture = {
+                cu:gts_cult1 = this
+            }
+        }
+    }
+    possible = {
+        has_variable = gtsr_country
+        NOT ={
+            any_primary_culture = {
+                cu:gts_cult1 = this
+            }
+        }
+    }
+
+    when_taken = {
+        add_primary_culture = cu:gts_cult1
+    }
+    ai_chance = {
+        base = 0
+    }
+}
