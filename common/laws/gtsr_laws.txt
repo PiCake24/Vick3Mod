@@ -177,8 +177,9 @@ law_gts_bureaucracy = {
 	modifier = {
 		interest_group_ig_gts_pol_str_mult = 0.05
 		state_bureaucracy_population_base_cost_factor_mult = -0.25
-		state_tax_capacity_mult = 0.25
+		state_tax_capacity_mult = 0.15
 		country_bureaucracy_investment_cost_factor_mult = -0.15
+		state_decree_cost_mult = -0.5
     }
 	ai_enact_weight_modifier = { #Petitions
         value = 0
@@ -196,9 +197,7 @@ law_gts_army = {
 	
 	progressiveness = 100
 	
-	unlocking_technologies = {
-        gts_growth_tech1
-    }
+	#unlocking_technologies = {gts_growth_tech1}
 	modifier = {
 		interest_group_ig_gts_pol_str_mult = 0.05
 		country_military_goods_cost_mult = -0.1
@@ -543,7 +542,7 @@ law_gts_wealthy = {
     }
     institution = institution_social_security
     institution_modifier = {
-        state_welfare_payments_add = 0.15
+        state_welfare_payments_add = 0.05
         state_dependent_wage_mult = 0.25
         state_working_adult_ratio_add = 0.02
         state_mortality_mult = 0.02

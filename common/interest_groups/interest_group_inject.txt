@@ -1,0 +1,30 @@
+﻿INJECT:ig_armed_forces = {
+	ideologies = {
+		ideology_gts_no_rights
+	}
+}
+INJECT:ig_devout = {
+	ideologies = {
+		ideology_gts_no_rights
+	}
+}
+INJECT:ig_industrialists = {
+	ideologies = {
+		ideology_gts_no_rights
+	}
+}
+INJECT:ig_intelligentsia = {
+	ideologies = {
+		ideology_gts_rights
+	}
+}
+INJECT:ig_landowners = {
+	ideologies = {
+		ideology_gts_no_rights
+	}
+}
+INJECT:ig_trade_unions = {
+	ideologies = {
+		ideology_gts_rights
+	}
+}

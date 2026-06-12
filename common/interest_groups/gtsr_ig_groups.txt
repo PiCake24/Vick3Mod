@@ -5,26 +5,19 @@
     index = 5
 
     ideologies = {
-        ideology_gtsist1
-        ideology_gtsist2
+        ideology_jingoist
+		ideology_gts_rights
+		ideology_gtsist1
+		ideology_gtsist2
     }
 
     character_ideologies = {
-        ideology_gtsisum_cruel
-        ideology_gtsisum_gentle
-        #ideology_jingoist
+        ideology_gts_equal
+        ideologoy_gts_supremacy
     }
 
     enable = {
-        #has_variable = gtsr_country
         always = yes
-    }
-
-    # Deprecated; use on_enable effect to assign traits instead
-    traits = {
-        ig_trait_gts_good2
-        ig_trait_gts_good1
-        ig_trait_gts_bad1
     }
 
     on_enable = {
@@ -189,11 +182,11 @@
                     is_in_government = yes
                 }
             }
-            multiply = { # Multiplied by 10.25x max
+            multiply = { # Multiplied by 1.25x max
                 desc = "POP_LOYALISTS"
                 value = pop_loyalist_fraction
                 divide = 4
-                add = 10
+                add = 1
             }
         }
         if = {
@@ -202,11 +195,11 @@
                     is_in_government = no
                 }
             }
-            multiply = { # Multiplied by 10.25x max
+            multiply = { # Multiplied by 1.25x max
                 desc = "POP_RADICALS"
                 value = pop_radical_fraction
                 divide = 4
-                add = 10
+                add = 1
             }
         }
     }
@@ -300,7 +293,7 @@
     }
 
     commander_weight = {
-        value = 0.5
+        value = 0
         if = {
             limit = {
                 owner = {
@@ -309,7 +302,7 @@
 
             }
             add = {
-                value = 1
+                value = 0
             }
         }
         if = {
@@ -319,13 +312,13 @@
                 }
             }
             add = {
-                value = 20
+                value = 0
             }
         }
     }
 
     executive_weight = {
-        value = 0.2
+        value = 0
         if = {
             limit = {
                 owner = {
@@ -334,7 +327,7 @@
 
             }
             add = {
-                value = 0.5
+                value = 0
             }
         }
         if = {
@@ -344,13 +337,13 @@
                 }
             }
             add = {
-                value = 1000
+                value = 0
             }
         }
     }
 
     noble_chance = {
-        value = 0.2
+        value = 0
         if = {
             limit = {
                 owner = {
@@ -359,7 +352,7 @@
 
             }
             add = {
-                value = 0.5
+                value = 0
             }
         }
         if = {
@@ -369,67 +362,25 @@
                 }
             }
             add = {
-                value = 1000
+                value = 0
             }
         }
     }
 
     female_commander_chance = {
-        value = 0.2
-        if = {
-            limit = {
-                owner = {
-                    has_law_or_variant = law_type:law_gts_same_as_human
-                }
-
-            }
-            add = {
-                value = 0.5
-            }
-        }
-        if = {
-            limit = {
-                owner = {
-                    has_law_or_variant = law_type:law_gts_ruler
-                }
-            }
-            add = {
-                value = 1000
-            }
-        }
+        value = 1.0
     }
 
     female_executive_chance = {
-        value = 0.0
-        if = {
-            limit = {
-                owner = {
-                    has_law_or_variant = law_type:law_gts_same_as_human
-                }
-
-            }
-            add = {
-                value = 0.5
-            }
-        }
-        if = {
-            limit = {
-                owner = {
-                    has_law_or_variant = law_type:law_gts_ruler
-                }
-            }
-            add = {
-                value = 1000
-            }
-        }
+        value = 1.0
     }
 
     female_politician_chance = {
-        value = 1000.0
+        value = 1.0
     }
 
     female_agitator_chance = {
-        value = 1000.0
+        value = 1.0
 
     }
 
@@ -437,8 +388,10 @@
     # scope:character is the most popular commander in the IG
     commander_leader_weight = {
         value = 0.25
-        multiply = ig_commander_leader_chance_mult
     }
+	magnate_leader_weight = {
+		value = 1.0
+	}
 
     # The chance that a executive belonging to this IG takes over leadership when it changes
     # scope:character is the most popular executive in the IG

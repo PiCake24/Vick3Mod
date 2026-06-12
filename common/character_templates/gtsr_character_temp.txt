@@ -27,7 +27,7 @@
     }
 }
 
-GTSR_Pamela = { #舰娘运输公司-企业
+GTSR_Pascal = { #舰娘运输公司-企业
     female = yes #女性
     first_name = "Pascal"
     last_name = "Bischa"

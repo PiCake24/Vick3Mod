@@ -1,0 +1,81 @@
+﻿ideology_gts_equal = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/gtsisum_gentle.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_gts_rights = {
+		law_gts_discriminated = disapprove
+		law_gts_same_as_human = approve
+		law_gts_ruler = disapprove
+	}
+	lawgroup_tiny_rights = {
+		law_tiny_rights1 = approve
+		law_tiny_rights2 = neutral
+		law_tiny_rights3 = disapprove
+		law_tiny_rights4 = strongly_disapprove
+		law_tiny_rights5 = strongly_disapprove
+	}
+	
+	country_trigger = {
+		#has_culture = gts_cult1
+		always = yes
+	}
+	
+	interest_group_leader_trigger = {
+		always = yes
+	}
+	
+	non_interest_group_leader_trigger = {
+		always = no
+	}
+	
+	interest_group_leader_weight = {
+		value = 10
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 10
+	}
+}
+ideologoy_gts_supremacy = {
+	icon = "gfx/interface/icons/ideology_icons/ideology_leader/gtsisum_cruel.dds"
+	
+	character_ideology = yes
+	
+	lawgroup_gts_rights = {
+		law_gts_discriminated = strongly_disapprove
+		law_gts_same_as_human = neutral
+		law_gts_ruler = strongly_approve
+	}
+	lawgroup_tiny_rights = {
+		law_tiny_rights1 = strongly_disapprove
+		law_tiny_rights2 = neutral
+		law_tiny_rights3 = neutral
+		law_tiny_rights4 = approve
+		law_tiny_rights5 = strongly_approve
+	}
+	lawgroup_education_system = {
+		law_gts_research = strongly_approve
+	}
+	
+	country_trigger = {
+		#has_culture = gts_cult1
+		always = yes
+	}
+	
+	interest_group_leader_trigger = {
+		always = yes
+	}
+	
+	non_interest_group_leader_trigger = {
+		always = no
+	}
+	
+	interest_group_leader_weight = {
+		value = 10
+	}
+	
+	non_interest_group_leader_weight = {
+		value = 10
+	}
+}
